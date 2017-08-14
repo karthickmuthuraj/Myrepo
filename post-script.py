@@ -7,7 +7,7 @@
 #             : IBM SINGAPORE PTE LTD                                         #
 #     Created : 28/06/2017                                                    #
 ###############################################################################
-import os,socket,sys,commands
+import os,socket,sys,commands,shutil
 
 def precheck():
 
@@ -33,11 +33,20 @@ def selinuxconfig():
      selinuxstat = selinuxstat.split("\n")
      for fields in selinuxstat:
          if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
-               with open("/etc/selinux/config","rw+") as selinuxfd:
-                   for line in selinuxfd:
-                     if line.find("SELINUX=enforcing"):
-                        setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
-                        line.write(setselinux) 
+              with open("/tmp/selinux_config","r") as selinuxfd:
+                  with open("/tmp/selinux.new","w") as newselinuxfd:
+                      for line in selinuxfd:
+                          if "SELINUX=enforcing" in line:
+                              setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
+                              newselinuxfd.write(setselinux)
+                          else:
+                              newselinuxfd.write(line)
+     if os.path.isfile("/tmp/selinux.new"):
+           shutil.copy2("/tmp/selinux.new","/etc/selinux/config")
+           os.chmod("/etc/selinux/config",644)
+           print("SELINUX is disabled. It required reboot")
+     else:
+        print "File does not exists" 
                      
 precheck()
 set_hostname()
