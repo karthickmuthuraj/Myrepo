@@ -1,0 +1,4018 @@
+ 1/1: ?
+ 1/2: /globals
+ 1/3: get_ipython().show_usage()
+ 1/4: /
+ 1/5: ?
+ 3/1: print "WELCOME"
+ 3/2: list
+ 3/3: ?
+ 3/4: list=[10,34,56,70,40]
+ 3/5: list
+ 3/6:
+for value in list:
+     print value
+ 3/7:
+for value in list:
+     print value
+ 3/8:
+for value in list:
+     print value
+ 3/9: list.sort()
+3/10: list
+3/11: system
+3/12: print list
+3/13: list=[10,-10,-8,40,50]
+3/14: list
+3/15: clear
+ 4/1: numbers=[10, 56, 78, 98, 45, 33, 21]
+ 4/2: numbers
+ 4/3: numbers.append(-12)
+ 4/4: numbers.append(-54)
+ 4/5: numbers.append(-32)
+ 4/6: numbers.append(-56)
+ 4/7: numbers
+ 4/8: clear
+ 4/9: numbers
+4/10:
+for num in numbers:
+    print num
+4/11: clear
+ 5/1: numbers=[10, 56, 78, 98, 45, 33, 21]
+ 5/2: big=0
+ 5/3:
+for num in numbers:
+     if num > big: 
+        big=num
+ 5/4: big
+ 5/5: numbers.index(big)
+ 5/6: big=0
+ 5/7: count=0
+ 5/8:
+for num in numbers:
+     if num > big: 
+        big=num 
+        count= count+1
+ 5/9: count
+5/10: numbers[count]
+5/11: big
+5/12: numbers
+5/13:
+for num in numbers:
+     if num > big: 
+        big=num 
+        count= count+1
+5/14: count
+5/15: numbers.index(big)
+5/16: clear
+5/17: big
+5/18: clear
+5/19: dir(str)
+5/20: help(upper)
+5/21: help(str)
+ 6/1: import sys
+ 6/2: dir(sys)
+ 6/3: import os
+ 6/4: dir(os)
+ 7/1: import os
+ 7/2: import path
+ 7/3: dir(path)
+ 8/1: import os
+ 8/2: os.stat("/root/sample.pl")
+ 8/3: os.stat("/root/sample.pl").st_mode
+ 8/4: os.stat("/root/sample.pl").st_MODE
+ 8/5: os.stat("/root/sample.pl").ST_MODE
+ 8/6: os.stat("/root/sample.pl").st_mode
+ 8/7: os.stat("/root/sample.pl")
+ 8/8: mode=os.stat("/root/sample.pl").st_mode
+ 8/9: mode
+8/10: os.getuid()
+8/11:
+if os.getuid() == 0:
+     continue
+8/12:
+if os.getuid() == 0:
+     continue
+8/13:
+if os.getuid() == 0:
+     print "The user is root"
+else:
+     print "The user is someone"
+ 9/1: %quickref
+ 9/2: Keyvalue = { 101:"Raja",102:"Siva",103:"Mani",104:"Mahe"}
+ 9/3: dir(Keyvalue)
+ 9/4: Keyvalue.get()
+ 9/5: Keyvalue.get(104)
+ 9/6: Keyvalue.get(105)
+ 9/7: Keyvalue.get(104)
+ 9/8: Keyvalue.get(101)
+ 9/9: Keyvalue.keys()
+9/10: Keyvalue.update(105:"Vijay")
+9/11: Keyvalue.update({105:"Vijay"})
+9/12: Keyvalue.keys()
+9/13: Keyvalue.keys().sort()
+9/14: Keyvalue.keys()
+9/15: Keyvalue.keys().shuffle()
+9/16: Keyvalue.keys().sort()
+9/17: Keyvalue.keys()
+10/1: import commands
+10/2: df_output=commands.getoutput("df -k")
+10/3: df_output
+10/4: df_output = df_output.split("\n")
+10/5: df_output
+11/1: import commands
+11/2: df_output = commands.getoutput("df -k")
+11/3: df_output
+11/4: df_output = df_output.split("\n")
+11/5: df_output
+11/6:
+for field in df_output:
+    if field.split(" ").[5] > 45:
+11/7:
+for field in df_output:
+    if field.split(" ")[5] > 45:
+11/8:
+for field in df_output:
+    if field.split(" ")[5] > 45:
+        print field.split(" ")[6]
+11/9:
+for field in df_output:
+    if field.split(" ")[5] > 45:
+        
+        
+        
+        print field.split(" ")[6]
+11/10: df_output
+11/11: dir(str)
+11/12: df_output.strip("%")
+11/13: df_output.strip('%')
+11/14: df_output
+11/15:
+for fields in df_output:
+    ufield=fields.split(" ")[5].strip("%")
+    print ufield
+11/16:
+for fields in df_output:
+    ufield=fields.split(" ")[4].strip("%")
+    print ufield
+11/17: df_output
+11/18:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    print ufield
+11/19:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if int(ufield):
+        print ufield
+11/20:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use": 
+       print ufield
+11/21:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 25: 
+       print fileds.split()[5]
+11/22:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 25: 
+       print fields.split()[5]
+11/23:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print fields.split()[5]
+11/24:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%" %fields.split()[5]
+11/25:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%",%fields.split()[5]
+11/26:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%" fields.split()[5]
+11/27:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" fields.split()[5]
+11/28:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" fields.split()[5]
+11/29:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" %fields.split()[5]
+11/30:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" %fields.split()[5]
+11/31:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" %fields.split()[5]
+11/32:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15: 
+       print "File System name:%s" %fields.split()[5]
+11/33:
+for fields in df_output:
+    ufield=fields.split()[4].strip("%")
+    if ufield != "Use" and int(ufield) >= 15:
+         print "File System name:%s" %fields.split()[5]
+11/34: userdetails=commands.getoutput("cat /etc/passwd")
+11/35: userdetails
+11/36: userdetails = userdetails.split()
+11/37: userdetails
+11/38: userdetails=commands.getoutput("cat /etc/passwd")
+11/39: userdetails = userdetails.split("\n")
+11/40: userdetails
+12/1: ?
+13/1: dir(os)
+13/2: import os
+13/3: dir(os)
+14/1: type()
+14/2: type(2)
+14/3: type('abc')
+14/4: import os
+14/5: import sys
+14/6: file = open("/root/sample.py")
+14/7: print(file.read(1))
+14/8: file.seek()
+14/9: file.seek(6)
+14/10: print(file.tell())
+14/11: file.close()
+15/1: import copy
+15/2: dir(copy)
+15/3: import
+15/4: print
+15/5: print "WELCOME"
+16/1: sentence = "Welcome to Python World"
+16/2:
+for ch in sentence:
+    count= count + 1
+16/3: count=0
+16/4:
+for ch in sentence:
+    count= count + 1
+16/5: count
+17/1:
+for ch in sentence:
+    count= count + 1
+17/2: sentence = "Welcome to Python World"
+17/3:
+for ch in sentence:
+    count= count + 1
+17/4: count=0
+17/5:
+for ch in sentence:
+    count= count + 1
+17/6: count
+17/7: object?
+17/8: help
+17/9: help()
+17/10: help()
+17/11: help('string')
+17/12: help('string')
+18/1: sentence = "Welcome to Python World"
+18/2: count=0
+18/3:
+for ch in sentence:
+    count= count + 1
+18/4: print count
+18/5: numberlist = raw_input("Enter the number:")
+18/6: type(numberlist)
+18/7: numberlist = raw_input("Enter the number:")
+18/8: type(numberlist)
+18/9: lst = raw_input("Enter the list of numbers:")
+18/10: lst
+18/11: type(lsT)
+18/12: type(lst)
+18/13: int(lst)
+18/14: lst = int(raw_input("Enter the list of numbers:"))
+19/1: !netstat -in
+19/2: !l
+19/3: !ls
+21/1: print "WELCOME"
+21/2: sentence = " This is the string..."
+21/3: sentence
+21/4: this in sentence
+21/5: This in sentence
+21/6:
+if This in Sentence:
+     print "The string exist"
+else:
+     print "The string does not exist"
+21/7:
+if This in sentence:
+     print "The string exist"
+else:
+     print "The string does not exist"
+21/8: sentence
+21/9: strip.sentence()
+21/10: sentence.strip()
+21/11:
+if This in sentence:
+     print "The string exist"
+else:
+     print "The string does not exist"
+21/12: This in sentence
+23/1: print "WELCOME"
+23/2: sentence = " This is the string..."
+23/3:
+if "This" in sentence:
+     print "The string exist"
+else:
+     print "The string does not exist"
+23/4: "this" in sentence
+23/5: import re
+23/6: dir(re)
+23/7: import sys
+25/1: num=raw_input("Enter the number")
+25/2: num
+25/3: len.num
+25/4: len(num)
+25/5: print "WELCOME"
+25/6: pwd
+25/7: clear
+25/8: ls
+25/9: pwd
+25/10: clear
+26/1: import commands
+26/2: ls_output = commands.getoutput("ls -l")
+26/3: ls_output
+26/4: ls_output = ls_output.split("\n")
+26/5: ls_output
+26/6:
+for fields in ls_output:
+    print fields.split()[8]
+26/7:
+for fields in ls_output:
+    print fields.split()[8]
+26/8:
+for fields in ls_output:
+               ufield=fields.split()[8]
+26/9: ls_output
+26/10: ls_output.split()
+26/11: ls_output[8]
+26/12:
+for field in ls_output:
+    updatefield = field.split()[8]
+26/13:
+for field in ls_output:
+    updatefield = field.split().strip()[8]
+26/14: sizeof(ls_output)
+26/15:
+for field in ls_output:
+    updatefield = field.split()[8]
+26/16:
+for field in ls_output:
+    updatefield = field.split()[8]
+26/17:
+for fields in ls_output:
+               ufield=fields.split()[8]
+26/18:
+for fields in ls_output:
+               ufield=fields.split()[8]
+26/19:
+for fields in ls_output:
+    print fields
+26/20:
+for fields in ls_output:
+    print fields.split()
+26/21:
+for fields in ls_output:
+    print fields.split().[8]
+26/22:
+for fields in ls_output:
+    print fields.split()[8]
+26/23:
+for fields in ls_output:
+    print fields.split()[1]
+26/24:
+for fields in ls_output:
+    print fields.split()[2]
+26/25:
+for fields in ls_output:
+    print fields.split()[3]
+26/26:
+for fields in ls_output:
+    print fields.split()[1]
+26/27:
+for fields in ls_output:
+    print fields.split()[8]
+27/1: print "WELCOME"
+27/2: sys.argv
+27/3: sys.argv[0]
+27/4: basename
+28/1:
+while file("/root/sample.py") as f:
+    s = f.read()
+    print s
+28/2:
+with open("/root/sample.py") as f:
+     for line in f.readlines():
+         print line
+28/3: !more sample.py
+29/1: import commands
+29/2: vmtype=commands.getoutput("dmidecode -s system-product-name")
+29/3:
+if vmtype == "VirtualBox":
+     print "The vm is Virtualbox"
+else:
+     print "The VM is in differen hypervisor"
+29/4: !more getdisk.sh
+29/5: import sys
+29/6: dir(sys)
+29/7: sys.version()
+29/8: sys.version_info()
+29/9:
+if vmtype == "VirtualBox":
+     print "The vm is Virtualbox"
+else:
+     print "The VM is in differen hypervisor"
+30/1: import os
+30/2: dir(os)
+30/3: os.uname()
+30/4: mname=os.uname()
+30/5: )
+30/6: type(mname)
+30/7: mname=mname.split()
+30/8: dir(mname)
+30/9: mname[1]
+30/10: import commands
+30/11: commands.getoutput("grep -i root /etc/fstab")
+30/12: fstyp=commands.getoutput("grep -i root /etc/fstab")
+30/13: fstype=fstype.split()[2]
+30/14: fstyp=fstyp.split()[2]
+30/15: fstype
+30/16: fstyp
+30/17:
+if fstyp = "xfs": 
+     print "The system is currently running %s" % fstyp
+else:
+     print "The system is not running %s" %fstyp
+30/18:
+if fstyp == "xfs": 
+     print "The system is currently running %s" % fstyp
+else:
+     print "The system is not running %s" %fstyp
+30/19: commands.getoutput("uname -n")
+30/20: for cmds in "uname -n" "grep -i xfs /etc/fstab"
+30/21:
+for cmds in "uname -n" "grep -i xfs /etc/fstab":
+    commands.getoutput(cmds)
+30/22:
+for cmds in "uname -n" "grep -i xfs /etc/fstab":
+    commands.getoutput(cmds)
+30/23:
+for cmds in "uname -n" "grep -i xfs /etc/fstab":
+                print cmds
+30/24: groupcmds=["uname -n","grep -i xfs /etc/fstab"]
+30/25:
+for cmds in groupcmds:
+    
+    print cmds
+30/26:
+for cmds in groupcmds:
+    commands.getoutput(cmd)
+30/27:
+for cmds in groupcmds:
+    commands.getoutput(cmds)
+30/28: groupcmds=["uname -n","grep -i xfs /etc/fstab"]
+30/29:
+for cmds in groupcmds:
+     print commands.getoutput(cmds)
+30/30:
+for cmds in groupcmds:
+    commands.getoutput(cmds)
+30/31: ls
+31/1:
+for cmds in groupcmds:
+     print commands.getoutput(cmds)
+31/2: groupcmds=["uname -n","grep -i root /etc/fstab"]
+31/3: groupcmds
+31/4: !more sample.pl
+31/5: !more getdisk.sh
+32/1: import commands
+32/2: userdetails=commands.getoutput("cat /etc/passwd")
+32/3: userdetails
+32/4: userdetails = userdetails.split()
+32/5: userdetails
+32/6: userdetails=commands.getoutput("cat /etc/passwd")
+32/7: userdetails = userdetails.split("\n")
+32/8: userdetails
+32/9: updated_list=[]
+32/10:
+for user in userdetail:
+      user[0]=updated_list
+32/11:
+for user in userdetail:
+         updated_list.append(user[0],user[2-6])
+32/12:
+for user in userdetails:
+         updated_list.append(user[0],user[2-6])
+32/13:
+for user in userdetails:
+         updated_list.append(user[0])
+32/14: updated_list
+32/15:
+for user in userdetails:
+         updated_list.append(user[0].split())
+32/16: updated_list
+32/17:
+for user in userdetails:
+              print user.split()[0]
+32/18:
+for user in userdetails:
+              print user.split(":")[0]
+32/19:
+for user in userdetails:
+         updated_list.append(user.split(":")[0])
+32/20: updated_list
+32/21: updated_list=[]
+32/22: updated_list
+32/23:
+for user in userdetails:
+         updated_list.append(user.split(":")[0])
+32/24: updated_list
+32/25: updated_list=[]
+32/26: userdetails
+32/27:
+for user in userdetails:
+              updated_list.append(user.split(":")[0])
+     updated_list.append(user.split(":")[2:])
+32/28:
+for user in userdetails:
+    updated_list.append(user.split(":")[0])
+    updated_list.append(user.split(":")[2:])
+32/29: updated_list
+32/30: updated_list
+32/31:
+for user in userdetails:
+    updated_list.append(user.split(":")[0])
+    updated_list.append(user.[2:])
+32/32:
+for user in userdetails:
+    updated_list.append(user.split(":")[0])
+    updated_list.append(user.split(":")[2:])
+32/33: updated_list
+32/34: userdetails=commands.getoutput("cat /etc/passwd")
+32/35: userdetails
+32/36: userdetails = userdetails.split("\n")
+32/37: userdetails
+32/38: userdetails
+32/39: userdetails
+32/40: userdetails
+32/41: userdetails
+32/42: userdict={}
+32/43: dir(userdict)
+32/44: userdict={}
+32/45:
+for user in userdetails:
+     line = user.split(":")
+32/46: print line
+32/47:
+for user in userdetails:
+     line = user.split(":")
+    print line
+32/48:
+for user in userdetails:
+     line = user.split(":")
+    print line
+32/49:
+for user in userdetails:
+    line = user.split(":")
+    print line
+32/50:
+for user in userdetails:
+    line = user.split(":")
+    print line
+33/1: new_dict = { x:y for x,y in range(2),range(10,12)}}
+33/2: new_dict = { x:y for x,y in range(2),range(10,12)) }
+33/3: new_dict = { x:y for x,y in (range(2),range(10,12)) }
+33/4: new_dict
+33/5:
+for x,y in new_dict:
+    print x,"===>",y
+33/6:
+for x,y in new_dict:
+    print x,"===>",y
+33/7:
+for x,y in new_dict:
+             print x,y
+33/8: new_dict
+33/9: reverse_dict={}
+33/10:
+for x,y in new_dict.items():
+    reverse_dict[y] = x
+33/11: reverse_dict
+35/1: import commands
+35/2: ls_output = commands.getoutput("ls -l")
+35/3: ls_output = ls_output.split("\n")
+35/4:
+for line in ls_output:
+      print line
+35/5:
+for line in ls_output:
+      print len(line)
+35/6:
+for line in ls_output:
+    print line
+35/7: dir(ls_output)
+35/8:
+for line in ls_output:
+    print line.count()
+35/9:
+for line in ls_output:
+    print count(line)
+35/10:
+for line in ls_output:
+    print line.count()
+35/11: dir(ls_output)
+35/12: remove(ls_output)
+35/13: ls_output.remove()
+36/1: ls
+36/2: ls
+36/3: ls -ltr
+36/4: pwd
+36/5: clear
+36/6: print
+36/7: welcome
+36/8: ls
+36/9: ls -ltr
+36/10: ls -ltr
+36/11: ls -ltr | awk '{ print $9}'
+37/1: import os
+37/2: os.access
+37/3: dir(os)
+37/4: os.access("/root/1",0200)
+37/5: ls 1
+37/6: ls
+37/7: pwd
+37/8: ls -l sample.pl
+37/9: os.access("/root/1",0644)
+37/10: os.access("/root/sample.pl",0644)
+37/11: os.access("/root/sample.pl")
+37/12: os.access("/root/sample.pl",644)
+37/13: clear
+38/1: new_dict = { x:y for x,y in range(2),range(10,12)) }
+38/2: new_dict = { x:y for x,y in (range(2),range(10,12)) }
+38/3: new_dict
+38/4: new_dcit
+38/5: new_dict
+39/1:
+for x,y in new_dict.items():
+    reverse_dict[y] = x
+39/2: new_dict = { x:y for x,y in range(2),range(10,12)) }
+39/3: new_dict = { x:y for x,y in (range(2),range(10,12)) }
+39/4:
+for x,y in new_dict.items():
+    reverse_dict[y] = x
+39/5: reverse_dict={}
+39/6:
+for x,y in new_dict.items():
+    reverse_dict[y] = x
+39/7: reverse_dict
+40/1: new_dict={ x:y for x,y in (range(2),range(10,12)) }
+40/2:
+for x,y in new_dict.items():
+     new_dict[y]=x
+40/3: new_dict
+40/4: clear()
+40/5: print
+40/6: dir(new_dict)
+40/7:
+for i in new_dict.iteritems():
+     print i
+40/8:
+for i,j in new_dict.iteritems():
+     print i
+40/9: import os
+40/10: os.access("/root/sample.pl",os.R_OK)
+40/11:
+if os.access("/root/sample.pl",os.R_OK):
+     print "The file has read permission to process"
+else
+40/12:
+if os.access("/root/sample.pl",os.R_OK):
+     print "The file has read permission to process"
+else:
+    print "The file has not have read permission"
+40/13: os.listdir("/root")
+41/1: import os
+41/2: dir(os)
+41/3: os.ttyname()
+41/4: D = {x: x*2 for x in range(10)}
+41/5: D
+41/6: D = {x: x*2 for x in range(1,10)}
+41/7: D
+41/8: D = {x: x*2 for x in range(10)}
+42/1: print "WELCOME"
+42/2: print "WELCOME"
+43/1: print "WELCOME"
+43/2: cd pydash
+43/3: ls
+43/4: ls -ltr
+44/1: import commands
+44/2:
+for line in ls_output:
+    print line.count()
+44/3: ls_output = commands.getputput("ls -l")
+44/4: ls_output = commands.getoutput("ls -l")
+44/5: ls_output
+44/6: ls_output = ls_output.split("\n")
+44/7: ls_output
+44/8: lsdict={}
+44/9: ls_output.pop(0)
+44/10: ls_output
+44/11:
+for line in ls_output:
+      print line
+44/12:
+for line in ls_output:
+                lsdict{line[8]} = line[:7]
+44/13:
+for line in ls_output:
+                lsdict[line[8]] = line[:7]
+44/14: lsdict
+44/15:
+for line in ls_output:
+               new_field = line.split()
+      lsdict[new_field[8]] = new_filed[:7]
+44/16:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_filed[:7]
+44/17:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_filed[:7]
+44/18: new_field=[]
+44/19:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_filed[:7]
+44/20:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:7]
+44/21: lsdict
+44/22: lsdict.clear()
+44/23:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:7]
+44/24: lsdict.clear()
+44/25:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:7]
+44/26: lsdict
+44/27: lsdict
+44/28: lsdict
+44/29: lsdict
+44/30: lsdict
+44/31: lsdict
+44/32: lsdict
+44/33:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:8]
+44/34: lsdict
+44/35: lsdict.clear
+44/36: lsdict.clear()
+44/37:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:8]
+44/38: lsdict.clear()
+44/39:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:8]
+44/40: lsdict
+44/41: lsdict.clear()
+44/42:
+for line in ls_output:
+    new_field = line.split()
+    lsdict[new_field[8]] = new_field[:8]
+44/43: lsdict
+46/1: ?
+46/2: ?
+46/3: help
+46/4: help()
+48/1: %quickref
+48/2: object
+48/3: %quickref
+48/4: help
+48/5: print()
+48/6: df -h
+48/7: df -k
+48/8: df -h
+48/9: import os
+48/10: df -k
+48/11: !df -h
+48/12: !df -h
+49/1: new_dict={}
+49/2: df -k
+49/3: dir(new_dict)
+51/1: import commands
+51/2:  passwd_output= commands.getoutput("cat /etc/passwd")
+51/3: passwd_output = passwd_output.split("\n")
+51/4: new_dict={}
+51/5: fields=[]
+51/6:
+for line in passwd_output:
+           fields= line.split(":")
+           new_dict[fields[0]]={fields[2]:fields[6]}
+51/7: new_dict
+51/8: new_dict
+51/9: new_dict
+51/10:
+for x,y in new-dict.items():
+     print x,"==>",y
+51/11:
+for x,y in new_dict.items():
+     print x,"==>",y
+51/12:
+for i,j in new_dict.items():
+     print i,"===>",j
+51/13:
+for i,j in new_dict.items():
+               print j[1]
+51/14:
+for i,j in new_dict.items():
+               print j.keys(100)
+51/15:
+for i,j in new_dict.items():
+               print j.keys(100)
+51/16: new_dict
+51/17:
+for x,y in new_dict.items():
+    print x,"==>",y
+51/18:
+for x,y in new_dict.items():
+            print type(y)
+51/19: dir(new_dict)
+51/20:
+for x,y in new_dict.items():
+    for i,j in y.items():
+         if i>100 and j=="/bin/bash":
+             print x
+51/21: raja = open("/etc/passwd","r")
+51/22: raja.readline()
+51/23: raja.readline()
+51/24: raja.readline()
+51/25: raja.readline()
+51/26: raja.readline()
+51/27: raja.readline()
+51/28: raja.readlines()
+51/29: raja.readlines()
+51/30: raja.readlines()
+51/31: raja.close()
+51/32: raja = open("/etc/passwd","r")
+51/33: raja.readlines()
+51/34: raja.close()
+51/35: raja
+53/1: import commands
+53/2: new_dict={}
+53/3: fields=[]
+53/4:
+for x,y in new_dict.items():
+    for i,j in y.items():
+         if i>100 and j=="/bin/bash":
+             print x
+53/5:
+for line in passwd_output:
+           fields= line.split(":")
+           new_dict[fields[0]]={fields[2]:fields[6]}
+53/6: passwd_output = passwd_output.split("\n")
+53/7: passwd_output = commands.getoutput("cat /etc/passwd")
+53/8: passwd_output = passwd_output.split("\n")
+53/9: new_dict={}
+53/10: fields=[]
+53/11:
+ for line in passwd_output:
+               fields= line.split(":")
+               new_dict[fields[0]]={fields[2]:fields[6]}
+53/12:
+for x,y in new_dict.items():
+        for i,j in y.items():
+                 if i>100 and j=="/bin/bash":
+                         print x
+54/1:
+for x,y in new_dict.items():
+        for i,j in y.items():
+                 if i>100 and j=="/bin/bash":
+                         print x
+54/2: ! nested_dict.py
+54/3: ! python nested_dict.py
+55/1: import commands
+55/2: passwd_output= commands.getoutput("cat /etc/passwd")
+55/3: passwd_output = passwd_output.split("\n")
+55/4: new_dict={}
+55/5: fields=[]
+55/6:
+for line in passwd_output:
+           fields= line.split(":")
+           new_dict[fields[0]]={fields[2]:fields[6]}
+55/7: new_dict
+55/8: new_dict
+55/9: print
+56/1: print
+56/2:
+with open("/etc/passwd","r") as raja:
+    raja.readlines()
+56/3: raja
+56/4: raja
+57/1:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+         print line
+57/2:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+        print line
+57/3:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+        print line
+57/4: dir({})
+57/5: new_dict
+57/6: import commands
+57/7:
+for line in passwd_output:
+           fields= line.split(":")
+           new_dict[fields[0]]={fields[2]:fields[6]}
+57/8: dir(())
+57/9: type([])
+57/10: print "WELCOME"
+57/11: dir([])
+58/1: import commands
+58/2:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+         print line
+58/3:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+         print (line,end="")
+58/4:
+with open("/etc/passwd","r") as raja:
+    for line in raja:
+         print line.strip()
+58/5:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        print line
+58/6:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        print line.strip()
+58/7:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        type(line)
+58/8:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        print type(line)
+58/9:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin" in line
+      print line
+58/10:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin" in line:
+      print line
+58/11:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin" in line:
+            print line
+59/1:
+ith open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+59/2:
+with open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+             if "PermitRootLogin" in line and not line.startswith("#"):
+                print line
+59/3:
+with open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+             if "PermitRootLogin" in line and not line.startswith("#"):
+                print line.strip()
+59/4: dir(line)
+59/5: type(line)
+59/6:
+with open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+             if "PermitRootLogin" in line and not line.startswith("#"):
+                print line.strip()
+59/7:
+with open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+             if "PermitRootLogin" in line and not line.startswith("#"):
+                print line.strip()
+59/8:
+with open("/etc/ssh/sshd_config","r") as raja:
+        for line in raja:
+             if "PermitRootLogin no" in line and not line.startswith("#"):
+                 line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+         raja.write(line)
+     else:
+         print line.strip()
+59/9:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+            line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+            raja.write(line)
+        else:
+            print line.strip()
+59/10:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+            line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+            raja.write(line)
+        else:
+            print "PermitRootLogin settings are enabled Already"
+59/11:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+            line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+            raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+   exit(1)
+59/12:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            exit(1)
+59/13:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            exit
+59/14:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            exit()
+60/1:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit(1)
+60/2: import sys
+60/3:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit(1)
+60/4:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit()
+60/5:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit
+60/6:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit()
+60/7: import traceback
+60/8:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit()
+60/9:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit(0)
+60/10: %%
+60/11: %tb
+60/12:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            sys.exit
+60/13:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            break
+60/14:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+        if "PermitRootLogin no" in line and not line.startswith("#"):
+           line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+           raja.write(line)
+        else:
+            print "PermitRootLogin is enabled already"
+            break
+61/1: dir(os)
+61/2: import os
+61/3: dir(os)
+61/4: dir(kill)
+61/5: kill
+61/6: os.kill()
+61/7: import os
+61/8: dname=raw_input("Enter the name")
+61/9: dname
+61/10: type(dname)
+61/11: import os
+61/12:
+if os.path.exists(dname):
+    pass
+else:
+   os.mkdir(dname)
+62/1: import pdb
+62/2: import sshset.py
+63/1: print "WELCOME"
+63/2: print "WELCOME"
+64/1: print "ASHWIN"
+64/2: ipython
+64/3: import os
+64/4: dir(os)
+64/5: df -k
+64/6: os.times()
+64/7: os.times()
+64/8: os.umask()
+64/9: os.umask(0666)
+65/1: import o s
+65/2: import os
+65/3: dir(os)
+65/4: os.stat()
+65/5: os.stat()
+65/6: os.stat()
+65/7: os.stat("/root/sample.pl")
+65/8: os.stat("/root/sample.pl").st_ino()
+65/9: os.stat("/root/sample.pl").st_ino
+65/10: !ls -l
+65/11: !ls -l /root/
+65/12: os.stat("/root/beats-dashboards-5.4.0")
+65/13: os.walk("/root/sampledir")
+65/14:
+for i in os.walk("/root/sampledir"):
+     print i
+65/15: names=os.walk("/root/sampledir")
+65/16: names
+65/17: type(names)
+65/18: type(names)
+65/19: dir(names)
+65/20: names
+66/1: import os
+66/2: import commands
+66/3:
+with open("/etc/ssh/sshd_config","r") as raja:
+    for line in raja:
+                if "PermitRootLogin no" in line and not line.startswith("#"):
+                   line = line.replace("PermitRootLogin no","PermitRootLogin yes")
+                   raja.write(line)
+                else:
+                        print "PermitRootLogin is enabled already"
+                        break
+67/1: import socket
+67/2: dir(socket)
+67/3: socket.sys()
+67/4: socket.gethostbyname()
+67/5: dir(socket)
+67/6: socket.gethostname
+67/7: socket.gethostname()
+68/1: import os,socket,sys
+68/2:
+if "chefserver" == socket.gethostname():
+     print "Hostname is same"
+else:
+     print "Hostname is different"
+69/1:
+with open("/etc/hostname",w) as hostf:
+     hostf.write("chefserver")
+69/2:
+with open("/etc/hostname","w") as hostf:
+     hostf.write("chefserver")
+69/3: !more /etc/hostname
+69/4: 1>/etc/hostname
+69/5: !> /etc/hostname
+69/6: !more /etc/hostname
+69/7:
+with open("/etc/hostname","w") as hostf:
+     hostf.write("chefserver")
+69/8: !more /etc/hostname
+69/9: clear
+70/1: import os
+70/2: os.getuid()
+71/1: import os
+71/2: os.stat("/etc/hostname").st_size
+71/3: os.stat("/etc/hostname").st_size == 0
+71/4: if os.stat("/etc/hostname").st_size !=0
+71/5:
+if os.stat("/etc/hostname").st_size !=0:
+     print "File size is not zero. Please make a copy of that"
+else:
+     print "File is empty"
+71/6: dir(os)
+71/7: dir(os)
+71/8: os.write()
+71/9: os.exit()
+72/1: hostn="chefserver"
+72/2:
+with open("/etc/sysconfig/network","a") as nhostf:
+    nhostf.write("HOSTNAME=%s",%hostn)
+72/3:
+with open("/etc/sysconfig/network","a") as nhostf:
+    nhostf.write("HOSTNAME=%s",%hostn)
+72/4:
+with open("/etc/sysconfig/network","a") as nhostf:
+    nhostf.write("HOSTNAME=:", hostn)
+73/1:
+with open("/etc/sysconfig/network","a") as nhostf:
+    nhostf.write("HOSTNAME=:" + hostn)
+73/2: hostn="chefserver"
+73/3:
+with open("/etc/sysconfig/network","a") as nhostf:
+    nhostf.write("HOSTNAME=:" + hostn)
+73/4: !more /etc/sysconfig/network
+74/1: import subprocess
+74/2: dir(subprocess)
+74/3: call("systemctl","status network.service")
+74/4: subprocess.call("systemctl","status network.service")
+74/5: subprocess.call(["systemctl","status network.service"])
+74/6: !systemctl status network.service
+75/1: import commands
+75/2: selinuxstat=commands.getoutput("/usr/sbin/sestatus")
+75/3: selinuxstat
+75/4: selinuxstat = selinuxstat.split("\n")
+75/5: selinxustat
+75/6: selinuxstat
+75/7:
+if selinuxstat.split(":")[1] == "enabled":
+     print "SELINUX is enabled"
+else:
+     print "SELINUX is disabled"
+75/8:
+for fields in selinuxstat:
+      if fields.split(":")[1] == "enabled":
+         print "SELINUX is enabled"
+      else:
+         print "SELINUX is disabled"
+75/9:
+for fields in selinuxstat:
+      if fields.split(":")[1] == "enabled":
+         print "SELINUX is enabled"
+      else:
+         break
+75/10:
+for fields in selinuxstat:
+      if fields.split(":")[1] == "enabled":
+         print "SELINUX is enabled"
+      else:
+         print "SELINUX is disabled"
+75/11:
+for fields in selinuxstat:
+      if fields.split(":")[1] == "enabled":
+         print "SELINUX is enabled"
+      else:
+         print "SELINUX is disabled"
+break
+75/12: selinuxstta
+75/13: selinuxstat
+75/14: selinux[1]
+75/15:
+for fields in selinuxstat:
+             print fields.split(":")[1]
+75/16:
+for fields in selinuxstat:
+             print fields.split(":")[1].strip
+75/17:
+for fields in selinuxstat:
+             print fields.split(":")[1].strip()
+75/18:
+for fields in selinuxstat:
+    if fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+    else:
+        print "SELINUX is diabled"
+        break
+75/19: !sestatus
+75/20:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+    else:
+        print "SELINUX is diabled"
+        break
+75/21:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+    else:
+        print "SELINUX is diabled"
+75/22:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+    else:
+        print "SELINUX is diabled"
+75/23:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+75/24:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        print "SELINUX is enabled"
+76/1: import commands
+76/2: selinuxstat=commands.getoutput("/usr/sbin/sestatus")
+76/3: selinuxstat = selinuxstat.split("\n")
+76/4: selinuxstat
+76/5: selinuxstat
+76/6:
+with open("/etc/selinux/config","w") as selinuxfd:
+    for eachline in selinuxfd:
+        print selinuxfd
+76/7:
+with open("/etc/selinux/config","r") as selinuxfd:
+    for eachline in selinuxfd:
+        print selinuxfd
+76/8: !more /etc/selinux/config
+77/1: !more post-script.py
+77/2: import commands
+77/3:
+with open("/etc/selinux/config","w+") as selinuxfd:
+    for line in selinuxfd:
+                             if line.find("SELINUX=enforcing"):
+                                    setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
+                                    line.write(setselinux)
+77/4: selinuxfd
+77/5: !more /etc/selinux/config
+78/1: import os
+78/2: dir(os)
+79/1: import webdriver
+79/2: import selenium from webdriver
+79/3: from selenium import webdriver
+79/4: dir(webdriver)
+79/5: import shutil
+79/6: dir(shutil)
+79/7: ls
+79/8: shutil.copystat("/root/1","/root/1.bkp")
+79/9: pwd
+79/10: shutil.copystat("/root/lesson/Myrepo/1","/root/lesson/Myrepo/1.bkp")
+79/11: shutil.copy("/root/lesson/Myrepo/1","/root/lesson/Myrepo/1.bkp")
+79/12: stat
+80/1: print "WELCOME"
+80/2: print "WELCOME"
+80/3: import vmware
+80/4:
+exit(0
+)
+81/1: import socket
+81/2: dir(socket)
+81/3: socket.os()
+81/4: socket.ssl()
+81/5: socket.sys()
+81/6: dir(socket)
+81/7: socket.warnings()
+81/8: socket.getservbyname()
+82/1: import commands
+82/2: lssci
+82/3: !lsscsi
+82/4: scsci_output = commands.getoutput("/usr/sbin/lsscsi")
+82/5: scsci_output
+82/6: !which lsscsi
+82/7: scsci_output = commands.getoutput("/usr/bin/lsscsi")
+82/8: scsi_output
+82/9: scsi_output = commands.getoutput("/usr/bin/lsscsi")
+82/10: scsi_output
+82/11: scsi_output = scsi_output.split("\n")
+82/12: scsi_output
+82/13: scsi_output
+82/14: dir(scsi_output)
+82/15: scsi_output
+82/16: ls
+82/17: scsi_output
+82/18:
+for fields in scsi_output:
+              print fields.split()[-1]
+82/19:
+for fields in scsi_output:
+              print fields.split()[-1].strip()
+83/1: import commands
+83/2: lsblk
+84/1: import lvm2py
+84/2: dir(lvm2py)
+84/3: lvm2py.lv
+85/1: import os
+85/2: ls
+85/3: dir(os)
+85/4: os.write()
+85/5: ls
+85/6: ls()
+85/7: ls -ltr
+86/1: import psutils
+86/2: import psutil
+87/1: import MySQLdb
+88/1: import time
+88/2: localtime = time.localtime(time.time())
+88/3: localtime
+88/4: localtime = time.localtime(time.time()).tm_hour
+88/5: localtime
+88/6: time.time()
+88/7: time.localtime(1499778841.339513)
+88/8: dir(time)
+88/9: time.localtime()
+88/10: time.localtime()
+88/11: time.localtime()
+88/12: time.localtime(1499778841.339513)
+88/13: localtime = time.localtime(time.time()).tm_hour
+88/14: time.localtime(1499778841.339513)
+88/15: localtime = time.localtime(time.time())
+88/16: time.localtime()
+89/1: import webbrowser
+89/2: dir(webbrowser)
+89/3: print "WELCOME"
+90/1: print "WELCOME"
+91/1: import os
+91/2: import os
+91/3: df -k
+91/4: df
+91/5: ls
+91/6: df -k
+91/7: ls
+91/8: ls -l
+91/9: pwd
+91/10: sshset.py
+91/11: !sshset.py
+91/12: ! python sshset.py
+92/1: a=10
+92/2: b=20
+92/3: a=192
+92/4: b=168
+92/5: c=56
+92/6: d=10
+92/7: print "%d.%d.%d.%d", %(a,b,c,d)
+92/8: print "%d.%d.%d.%d", % (a,b,c,d)
+92/9: print "%d.%d.%d.%d",%(a,b,c,d)
+92/10: print "%d.%d.%d.%d",%a,%b,%c,%d)
+92/11: print "%d.%d.%d.%d",%a,%b,%c,%d
+92/12: print "%d.%d.%d.%d", a,b,c,d
+92/13: print "%d\.%d\.%d\.%d", a,b,c,d
+92/14: print "%d.%d.%d.%d",% a,b,c,d
+93/1: a=192
+93/2: b=168
+93/3: c=56
+93/4: d=10
+93/5: print "%d.%d.%d.%d", % (a,b,c,d)
+93/6: print "%d.%d.%d.%d", %(a,b,c,d)
+93/7: print "%s.%s.%s.%s", %(a,b,c,d)
+93/8: print ("%s.%s.%s.%s")%(a,b,c,d)
+93/9: print ("%d.%d.%d.%d")%(a,b,c,d)
+93/10: import sys
+93/11: sys.stdout.write("Hello World")
+93/12: mystring="Hello World"
+93/13: mystring
+93/14: _
+93/15: import o s
+93/16: import os
+93/17: help(os)
+93/18: import os
+93/19: dir(os)
+93/20: help(umask)
+93/21: help(os.umask())
+93/22: help(umask)
+93/23: help(os)
+94/1: df -k
+94/2: import o s
+94/3: import os
+94/4: ls
+94/5: more awk.json
+94/6: ls
+95/1: print "WELCOME"
+95/2: import selenium
+95/3: dir(selenium)
+95/4: help(selenium)
+95/5: clear
+95/6: dir
+95/7: dir()
+96/1:
+print """ Welcome
+jdjflasjf
+aksdfjd
+jsadlf;j;dlf
+sjdfa;ljsdf
+jsda;fjlsd
+jldsafj;ljds"""
+96/2:
+trp="""salkjfhsdfkjsd
+sdjaflk;jdslf
+sajldk;fjsd
+jsadfl;kjds
+sajd;flskjdf
+ajs;flksdf
+sd;flkasjdklf
+s;jdlfkajslkd"""
+96/3: type(trp)
+96/4: clear
+98/1: import sys
+98/2: import os
+98/3:
+with open("errpt","r") as errpfd:
+    for line in errpfd:
+         line= line.split()
+         print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],line[5:])
+98/4:
+with open("errpt","r") as errpfd:
+    for line in errpfd:
+         line= line.split()
+         print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+98/5:
+with open("errpt","r") as errpfd:
+    for line in errpfd:
+         line= line.split()
+         print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+98/6:
+with open("errpt","r") as errpfd:
+    for line in errpfd:
+         line= line.split()
+         print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+98/7:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errpfd:
+            errfs.write("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+98/8: !more errpt.1
+98/9: ls
+98/10:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.write("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+98/11:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line = print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+   errfd.write(line)
+98/12:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line = print("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+   errfd.write(line)
+98/13:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+   errfd.write(l)
+98/14:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+             errfd.write(l)
+98/15:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            errfd.write(l)
+98/16: !more errpt.1
+98/17:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.write("%s,%s,%s,%s,%s,%s", %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            
+            
+            
+            
+            )
+98/18:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.write("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:]))
+98/19:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.write("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:]
+            
+            
+            )
+98/20:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.write("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:])
+98/21: !more errpt.1
+98/22: !more errpt.1
+98/23: ls -ltr
+98/24: ls -ltr
+99/1:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.writelines("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:])
+100/1:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.writelines("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:])
+102/1:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            errfd.writelines("%s,%s,%s,%s,%s,%s",line[0],line[1],line[2],line[3],line[4],line[5:])
+102/2:
+with open("errpt","r") as errptfd: 
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+             ",".join(line[5:])
+102/3:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        L = ",".join(line[5:])
+        print L
+102/4:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line
+102/5:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            errfd.write(l)
+102/6: ! more errpt.1
+102/7:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            print l
+102/8:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            print ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+102/9: ls -ltr
+103/1:
+with open("errpt","r") as fd:
+    for line in fd:
+        print line
+103/2:
+with open("errpt","r") as fd:
+    for line in fd:
+         line = line.split()
+103/3:
+with open("errpt","r") as fd:
+    for line in fd:
+         line = line.split()
+ print line
+103/4:
+with open("errpt","r") as fd:
+    for line in fd:
+         line = line.split()
+ print line
+103/5:
+with open("errpt","r") as fd:
+    for line in fd:
+        line = line.split()
+        print line
+103/6: hbline = line.split() line = line.split()n m
+103/7:  'i
+103/8: m line = line.split()]n\line = line.split() ]\\line = line.split()
+103/9: k
+103/10: kline = line.split()
+103/11: line = line.split()
+105/1: print "WELCOME"
+105/2:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            print l
+106/1: print('Hello World')
+106/2: 2+3
+106/3: 200-300
+106/4: 2 ** 3
+106/5: 2**5
+106/6: 456/0
+107/1: 500//100
+107/2: 500/100
+107/3:
+""" This is a Raja Selvaraj
+This is my first string in python"""
+107/4: import os
+107/5: fd = open("/etc/passwd","r")
+107/6: fd
+107/7: raja = fd.read()
+107/8: raja
+107/9: raja
+107/10: raja
+107/11: raja
+107/12: raja = raja.split("\n")
+107/13: raja
+107/14: fd = open("/etc/passwd","r")
+107/15: close(fd)
+107/16: type(fd)
+107/17: close(fd)
+107/18: fd.close()
+107/19: type(fd)
+107/20: fd.close()
+108/1: fd = open("/etc/passwd","r")
+108/2: fd.read()
+108/3: fd.read()
+108/4: exit()\
+110/1:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            print l
+110/2:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd
+        print line
+110/3:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            print line
+110/4:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line
+110/5:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line.strip()
+110/6:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+110/7: line
+110/8:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        print line
+110/9: new_list=[]
+110/10:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            l =("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+            print l
+110/11:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        print new_line
+110/12:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        new_list.appenf(new_line)
+110/13:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        new_list.append(new_line)
+110/14: new_list
+110/15:
+with open("errpt.1","w") as errfd:
+    for newl in errfd:
+        new1.write(new_list)
+110/16: new_list
+110/17:
+with open("errpt.1","w") as errfd:
+    for newl in errfd:
+        new1.write(new_list)
+110/18:
+with open("errpt.1","w") as errfd:
+    for line in new_list
+     errfd.write(line)
+110/19: new_list
+110/20:
+for line in new_list:
+    print line
+110/21:
+with open("errpt.1","w") as errfd:
+    for line in new_list
+     errfd.write(line)
+110/22:
+with open("errpt.1","w") as errfd:
+    for line in new_list:
+        errfd.write(line)
+110/23: !more errpt.1
+111/1: new_list=[]
+111/2:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        new_list.appenf(new_line)
+111/3:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        new_list.append(new_line)
+111/4: new_list
+111/5:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        new_line = ("%s,%s,%s,%s,%s,%s") %(line[0],line[1],line[2],line[3],line[4],str(line[5:]))
+        new_list.appenf(new_line)
+111/6:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+         ''.join(line)
+111/7:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+         print ''.joine(line)
+111/8:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+         print ''.join(line)
+111/9:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line
+111/10:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line.strip()
+111/11:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line.strip().split()
+111/12:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        print line.strip().split()
+        ''.join(line[5:])
+111/13:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line = line.strip().split()
+        L = ''.join(line[5:])
+111/14: print L
+111/15:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line = line.strip().split()
+        L = ' '.join(line[5:])
+111/16: print L
+111/17:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        line = ",".join(line[0:5])
+        print line
+111/18:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        x = ",".join(line[0:5])
+        y = " ".joine(line[5:])
+        x = x + y
+        print x
+111/19:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        x = ",".join(line[0:5])
+        y = " ".join(line[5:])
+        x = x + y
+        print x
+111/20:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        x = ",".join(line[0:5]) + ","
+        y = " ".join(line[5:])
+        x = x + y
+        print x
+111/21:
+with open("errpt","r") as errptfd:
+    for line in errptfd:
+        line=line.strip().split()
+        x = ",".join(line[0:5]) + ","
+        y = " ".join(line[5:])
+        x = x + y
+        print x
+111/22:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write(x)
+111/23: ! more errpt.1
+111/24:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write("\n".joine(x))
+111/25:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write("\n".join(x))
+111/26:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            type(x)
+111/27: type(x)
+111/28:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write('\n'.join(x))
+111/29: !more errpt.1
+111/30:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.writelines(x)
+111/31: !more errpt.1
+111/32:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write(x)
+111/33: ! more errpt.1
+111/34:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y
+            errfd.write(x + "\n")
+111/35: ! more errpt.1
+111/36: clear
+111/37: ls
+111/38: ls -ltr
+111/39:
+with open("errpt","r") as errptfd:
+    with open("errpt.1","w") as errfd:
+        for line in errptfd:
+            line=line.strip().split()
+            x = ",".join(line[0:5]) + ","
+            y = " ".join(line[5:])
+            x = x + y + "\n"
+            errfd.write(x)
+111/40: ! more errpt.1
+111/41: clear
+111/42: ls
+111/43: ls -ltr
+112/1: ls
+112/2: ls -ltr
+112/3: more 1
+112/4: df -k
+112/5: !df
+112/6: ! df
+112/7: pwd
+112/8: clear
+112/9: ls
+112/10: pwd
+113/1: print "WELCOME"
+113/2: print "WELCOME"
+113/3: age = int(input("Enter the age"))
+113/4:
+if age>18:
+    print('You are now adult')
+else:
+    print('You are not adult')
+113/5: age = int(input("Enter the age"))
+113/6:
+if age>18:
+    print('You are now adult')
+else:
+    print('You are not adult')
+113/7: ! grep -i ftp /etc/services
+113/8: ! grep -i ftp /etc/services
+113/9: ! grep -i ftp /etc/services
+113/10:
+if age>18:
+    print('You are now adult')
+else:
+    print('You are not adult')
+114/1: mark=1
+114/2: mark=90
+114/3: mark=90
+114/4:
+if mark>=90:
+    print "Grade A"
+elif mark<=90:
+    print "Grade B"
+else
+114/5:
+if mark>=90:
+    print "Grade A"
+elif mark<=90:
+    print "Grade B"
+else:
+    print "Grade C"
+114/6:
+if mark>=90:
+    print "Grade A"
+elif mark<=90:
+    print "Grade B"
+else:
+    print "Grade C"
+115/1: help
+115/2: %access
+115/3: %list
+115/4: %
+115/5: ?
+115/6: names=["Raja","Naga","Rajesh"]
+115/7: name
+115/8: names
+115/9: name
+115/10: names
+115/11: raj=range(10)
+115/12: raj
+115/13: raj[0]=range(5)
+115/14: raj
+115/15: raj[0][1]
+115/16: type(raj[0])
+115/17:
+for line in raj:
+    print line
+115/18:
+for line in raj:
+    if type(line) =="list":
+        print line
+115/19: type(raj[0])
+115/20:
+for line in raj:
+    if type(line) == "list":
+        print line
+115/21:
+for line in raj:
+    if type(line) == list:
+        print line
+115/22: name
+115/23: names=["Raja","Naga","Rajesh"]
+115/24: raj
+115/25: raj + names
+115/26:
+for line in raj:
+    if type(line) == list:
+        print line
+elif type(line) == str:
+    print line
+115/27:
+for line in raj:
+    if type(line) == list:
+        print line
+    elif type(line) == str:
+        print line
+115/28: line
+115/29: line[9]
+115/30: ls -ltr
+115/31: names
+115/32:
+if "Raja" in names:
+    print "Raja exists"
+else:
+    print "Raja not available"
+116/1: type
+116/2: type(str)
+116/3: names=["Raja","Naga","Rajesh"]
+116/4: dir(names)
+116/5:
+index(names
+)
+116/6: names.index("Raja")
+116/7: names
+116/8: names.index("Rajesh")
+116/9: names.insert("Ashwin",1)
+116/10: names.insert(1,"Ashwin")
+116/11: names.index("Rajesh")
+116/12: names
+116/13: dir(names)
+116/14: names.count()
+116/15: names.count("Raja")
+116/16: names.reverse()
+116/17: names
+116/18: names.reverse()
+116/19: names
+117/1: import mysql.connector
+117/2: dir(mysql.connector)
+117/3:
+cnx = mysql.connector.connect(user='scott', password='tiger',
+                              host='127.0.0.1',
+                              database='employees')
+117/4: cnx.close()
+117/5: cnx = mysql.connector.connect(user='root',password='root123',host='192.168.56.10',database='cmdb')
+117/6: cnx = mysql.connector.connect(user='root',password='root123',host='127.0.0.1',database='cmdb')
+117/7: dir(cnx)
+118/1:
+exit(0
+)
+120/1: import commands
+120/2: line = commands.getoutput("mount -v")
+120/3: line
+120/4: line = line.split()
+120/5: line
+120/6: points = map(lambda line: line.split()[2], lines)
+120/7: line = line.split()
+120/8: line = commands.getoutput("mount -v")
+120/9: lines = commands.getoutput("mount -v")
+120/10: points = map(lambda line: line.split()[2], lines)
+120/11: lines = commands.getoutput('mount -v').splitlines()
+120/12: points = map(lambda line: line.split()[2], lines)
+120/13: lines
+120/14: points
+121/1: import commands
+121/2: lines = commands.getoutput("mount -v")
+121/3: points = map(lambda line: line.split()[2], lines)
+121/4: points = map(lambda line: line.split()[2], lines)
+121/5: lines = commands.getoutput("mount -v").split()
+121/6: points = map(lambda line: line.split()[2], lines)
+121/7: lines = commands.getoutput('mount -v').splitlines()
+123/1: import pysysinfo
+123/2: names=["Raja","Naga","Rajesh"]
+123/3: names.append("ASHWIN")
+123/4: names.append("Mahe")
+123/5: names.append("Mani")
+123/6: names
+123/7: names[::-1]
+123/8: names[-1]
+123/9: names[-1::]
+123/10: names[:-1]
+123/11: names[-1]
+123/12: names.index("Mani")
+123/13: dir(names)
+123/14: names.sort()
+123/15: names
+123/16: names[-1]
+123/17: names[::-1]
+123/18: names[::-2]
+123/19: names[:]
+123/20: import gdchart
+123/21: import shelve
+124/1: pw
+124/2: print
+125/1: print "WELCOME"
+126/1: print "WELCOME"
+126/2: df -k
+126/3: df -k
+126/4: ! df -k
+127/1: ! df -k
+127/2: ! df -k
+127/3: ! df -k
+127/4: ! df -k
+127/5: ! df -k
+127/6: ! df -k
+128/1: dir(names)
+128/2: lines = commands.getoutput('mount -v').splitlines()
+128/3: import commands
+128/4: lines = commands.getoutput('mount -v').splitlines()
+128/5: line
+128/6: lines
+128/7: ln
+128/8: lines
+128/9: lines = commands.getoutput('mount -v').splitlines()
+128/10: lines
+128/11:
+if lines[0].startswith("/dev"):
+    print lines[2]
+128/12: lines[0]
+128/13:
+if lines.split()[0].startswith("/dev"):
+    print lines.split()[2]
+128/14:
+if lines.split()[0].startswith("/dev"):
+    
+    print lines
+128/15: lines
+128/16: lines.split()
+128/17: lines
+128/18:
+for line in lines:
+    if line.split()[0].startwith("/dev"):
+        print line.split()[2]
+128/19:
+for line in lines:
+    if line.split()[0].startswith("/dev"):
+        print line.split()[2]
+128/20: ! df -k
+128/21:
+for line in lines:
+    if line.split()[0].startswith("/dev"):
+        print line.split()[2]
+128/22: exi
+130/1:
+for line in lines:
+    if line.split()[0].startswith("/dev"):
+        print line.split()[2]
+130/2: names[::-2]
+130/3: ls
+130/4: !more sshset.pl
+130/5: !more sshset.pl
+130/6: x=10
+130/7: y=15
+130/8: x=5
+130/9: x if y else z
+130/10: x or y
+130/11: y or x
+130/12: x and y
+132/1: import commands
+132/2: devname = commands.getoutput("df -k /")
+132/3: devname
+132/4: devname=devname.split("\n")
+132/5: devname
+132/6:
+if devname.split()[-1] == "/":
+    DNAME=devname.split()[0]
+132/7: devname
+132/8:
+for fields in devname:
+    if fields.split()[-1] == "/":
+        DNAME=fields.split()[0]
+132/9: DNAME
+132/10: vgoutput = commands.getoutput("vgs --noheadings")
+132/11: vgoutput
+132/12: vgoutput = commands.getoutput("vgs --noheadings 2> /dev/null")
+132/13: vgoutput
+132/14: vgoutput = vgoutput.split("\n")
+132/15: vgoutput
+132/16: lvouput=commands.getoutput("/usr/bin/lvs",DNAME,"--noheadings")
+132/17: lvouput=commands.getoutput("/usr/bin/lvs DNAME")
+132/18: lvoutput
+132/19: lvouput
+132/20: lvouput=commands.getoutput("lvs DNAME")
+132/21: lvouput
+132/22: lvouput=commands.getoutput("lvs " + DNAME)
+132/23: lvouput
+132/24: lvouput=commands.getoutput("lvs " + DNAME + " 2>/dev/null)
+132/25: lvouput=commands.getoutput("lvs " + DNAME + " 2>/dev/null")
+132/26: lvoupyt
+132/27: lvouput
+132/28: lvs
+132/29: !lvs
+132/30: lvouput=commands.getoutput("lvs " + DNAME + " --noheadings 2>/dev/null)
+132/31: lvouput=commands.getoutput("lvs " + DNAME + " --noheadings 2>/dev/null")
+132/32: lvouput
+133/1: import commands
+133/2: lvouput=commands.getoutput("lvs " + DNAME + " --noheadings 2>/dev/null")
+133/3: devname = commands.getoutput("df -k /")
+133/4: lvouput=commands.getoutput("lvs " + DNAME + " --noheadings 2>/dev/null")
+133/5: lvouput=commands.getoutput("lvs " + DNAME + " 2>/dev/null)
+133/6: lvouput=commands.getoutput("lvs " + DNAME + " 2>/dev/null")
+133/7:
+for fields in devname:
+    if fields.split()[-1] == "/":
+        DNAME=fields.split()[0]
+134/1: import commands
+134/2: devname = commands.getoutput("df -k /")
+134/3:
+for fields in devname:
+    if fields.split()[-1] == "/":
+        DNAME=fields.split()[0]
+134/4: devname = devname.split("\n")
+134/5:
+for fields in devname:
+    if fields.split()[-1] == "/":
+        DNAME=fields.split()[0]
+134/6: DNAME
+134/7: DNAME
+134/8: DNAME
+134/9: lvouput=commands.getoutput("lvs " + DNAME + " 2>/dev/null")
+134/10: lvoutput
+135/1: ?
+135/2: clear
+135/3: ls
+135/4: ls -ltr
+135/5: more tuple.py
+135/6: t=tuple(range(25))
+135/7: t
+135/8: ls -ltr
+135/9: more files.py
+135/10: more sshset.pl
+135/11: more post_script.sh
+135/12: ls -ltr
+137/1:  selinuxstat = commands.getoutput("/usr/sbin/sestatus")
+137/2:      selinuxstat = selinuxstat.split("\n")
+137/3:
+     for fields in selinuxstat:
+    
+     selinuxstat = commands.getoutput("/usr/sbin/sestatus")
+137/4:      selinuxstat = selinuxstat.split("\n")
+137/5: import commands
+137/6: ! post-script.py
+137/7: more post-script.py
+137/8: selinuxstat = commands.getoutput("/usr/sbin/sestatus")
+137/9:  selinuxstat = selinuxstat.split("\n")
+137/10:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        with open("/etc/selinux/config","r") as selinuxfd:
+            with open("/etc/selinux/config.new","rw") as selinuxfdnew:
+                for line in selinuxfd:
+                    if line.find("SELINUX=enforcing"):
+                        setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
+                        selinuxfdnew.write(setselinux)
+                    else:
+                        selinuxfdnew.write(line)
+137/11: more /etc/selinux/config.new
+138/1: clear
+138/2: ls
+138/3: ls -ltr
+138/4: pwd
+138/5: clear
+138/6: ls -ltr
+138/7: more 1
+139/1: number=("1:" "One","2:""Two")
+139/2: type(number)
+140/1: def move(this)
+140/2:
+def move(this):
+    print("File is moving")
+140/3: raja = move()
+140/4: raja = move("sra")
+140/5: ls
+140/6: more argv.py
+140/7: import sys
+140/8:
+for arg in sys.argv:
+    print arg
+140/9: more ignoreE.py
+140/10:
+def main():
+exit()
+140/11: def main()
+140/12:
+def main():
+    pass
+140/13: raja = main()
+140/14: raja
+140/15: type(raja)
+140/16: clear
+140/17: ls
+140/18: ls -ltr
+140/19: cd\
+140/20: more except.py
+140/21: cd pythonScripts/
+140/22: ls
+140/23: ls -ltr
+140/24: clear
+140/25: ls
+140/26: ls -ltr
+140/27: more argv.py
+140/28: ls -ltr
+140/29: more dict.py
+140/30: ls -ltr
+140/31: pwd
+140/32: clear
+141/1: ls
+141/2: ls -ltr
+142/1:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        with open("/etc/selinux/config","r") as selinuxfd:
+            with open("/etc/selinux/config.new","rw") as selinuxfdnew:
+                for line in selinuxfd:
+                    if line.find("SELINUX=enforcing"):
+                        setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
+                        selinuxfdnew.write(setselinux)
+                    else:
+                        selinuxfdnew.write(line)
+142/2: more post_script.sh
+142/3: import commands
+142/4: sestat= commands.getoutput("/usr/sbin/sestatus")
+142/5: sestat
+142/6:
+for fields in selinuxstat:
+    if fields.split(":")[0].strip().startswith("SELinux") and fields.split(":")[1].strip() == "enabled":
+        with open("/etc/selinux/config","r") as selinuxfd:
+            with open("/etc/selinux/config.new","rw") as selinuxfdnew:
+                for line in selinuxfd:
+                    if line.find("SELINUX=enforcing"):
+                        setselinux=line.replace("SELINUX=enforcing","SELINUX=disabled")
+                        selinuxfdnew.write(setselinux)
+                    else:
+                        selinuxfdnew.write(line)
+145/1: import socket
+145/2: socket.getnameinfo()
+145/3: socket.getprotobyname()
+145/4: socket.getaddrinfo
+145/5: socket.getaddrinfo()
+145/6: socket.gethostname
+145/7: socket.gethostname()
+145/8: import netifaces
+145/9: file = os.popen("netstat -nr | grep UG | awk '{ print $2 }'")
+145/10: import os
+145/11: file = os.popen("netstat -nr | grep UG | awk '{ print $2 }'")
+145/12: file.read()
+145/13: file.read()
+145/14: file = os.popen("netstat -nr | grep UG | awk '{ print $2 }'")
+145/15: gw= file.read()
+145/16: gw
+145/17: gw = gw.split("\n")
+145/18: gw
+146/1: import os
+146/2: os.getuname()
+146/3: dir(os)
+146/4: os.uname()
+146/5: name = os.uname()
+146/6: dir(uname)
+146/7: dir(name)
+146/8: type(name)
+146/9: name[1]
+146/10:
+if os.uname[1] == "chefserver":
+    print "SUCCESS"
+else:
+    print "FAIL"
+146/11:
+for fields in name:
+    if fields[1] == "chefserver":
+        print "SUCCESS"
+    else:
+        print "FAIL"
+146/12:
+if "chefserver" in name:
+    print "SUCCESS"
+else:
+    print "FAIL"
+146/13: names
+146/14: nes
+146/15: name
+146/16:
+if "chefserver in name:
+    print SUCCESS
+else:
+    print FAIL
+146/17:
+if "chefserver" in name:
+    print SUCCESS
+else:
+    print FAIL
+146/18:
+if "chefserver" in name:
+    print "SUCCESS"
+else:
+    print "FAIL"
+146/19:
+if "chefserver" in name:
+    print "SUCCESS"
+else:
+    print "FAIL"
+147/1: import json
+147/2: dir(json)
+148/1: import subprocess
+148/2: import
+148/3: dir(subprocess)
+148/4: import signal
+148/5: dir(signal)
+148/6: signal.getsignal()
+148/7: signal.alarm()
+148/8: import subprocess
+148/9: import os
+148/10: dir(os)
+148/11: import sys
+148/12: dir(sys)
+148/13: sys.subversion()
+148/14: sys.subversion()\
+148/15: sys.subversion
+148/16: sys.ps1
+148/17: sys.ps2
+148/18: sys.ps3
+148/19: sys.version
+148/20: sys.versioninfo
+148/21: sys.versioninfo()
+148/22: dir(os)
+148/23: dir(sys)
+148/24: sys.version_info
+148/25: sys.last_value
+148/26: sys.last_type
+148/27: sys.version_info
+148/28: sys.last_type
+148/29: g= sys.version_info
+148/30: g
+148/31: type(g)
+148/32: sys.last_type
+148/33: dir(sys)
+148/34: pydbug
+148/35: pydbug()
+148/36: sys.pydebug()
+149/1: import os
+149/2: os.getgid()
+149/3: os.openpty()
+150/1: import os
+150/2: dir(os)
+150/3: os.uname()
+150/4: os.name()
+150/5: os.uname()
+150/6: os.uname()[]0]
+150/7: os.uname()[0]
+150/8:
+if os.uname()[0] == "Linux":
+    print "Linux"
+else:
+    print "Unix"
+151/1: import pdb
+151/2:
+def make_bread():
+    pdb.set_trace()
+        return "I don't have time"
+151/3:
+ def make_bread():
+    pdb.set_trace()
+    return "I don't have time"
+151/4: print(make_bread())
+151/5: !ls
+151/6: more convert.errpt.py
+152/1:
+ def make_bread():
+    pdb.set_trace()
+    return "I don't have time"
+149/4: def genfunc()
+149/5:
+def genfunc():
+    for i in range(5):
+        yield(i)
+149/6: next(gefunc())
+149/7: raja = genfunc()
+149/8: raja
+149/9: raja.next()
+149/10: raja.next()
+149/11: raja.next()
+149/12: raja.next()
+149/13: raja.next()
+149/14: raja.next()
+149/15: raja.next()
+149/16: raja.next()
+149/17:
+for i in genfunc():
+    print(i)
+152/2: ls
+152/3: more 1
+152/4: more sysinfo
+152/5: more post-script.py
+152/6: more post-script.py
+152/7: more post-script.py
+152/8: more post-script.py
+153/1:
+for x,y in range(10),range(10):
+    print x,y
+153/2: help
+153/3: help(dir)
+149/18: i
+149/19: i=range(10)
+149/20: i
+149/21: i={}
+149/22: i
+149/23:
+for j in range(10):
+    i{j} = j
+154/1: for x,y in (range(2),range(2))
+154/2:
+for x,y in (range(2),range(2)):
+    
+    print x,y
+154/3: {x, y for x, y in (range(2), range(3, 5))}
+154/4: x, y for x, y in (range(2), range(3, 5))
+155/1: { x:y  for x, y in (range(2), range(3, 5)) }
+155/2: { x:y  for x, y in (range(2), range(3, 5)) }
+155/3: { x:y  for x, y in (range(2), range(3, 5)) }
+155/4: { x:y  for x, y in (range(2), range(3, 5)) }
+155/5: { x:y  for x, y in (range(2), range(3, 5)) }
+155/6: { x:y  for x, y in (range(2), range(3, 5)) }
+155/7: { x:y  for x, y in (range(2), range(3, 5)) }
+155/8: { x:y  for x, y in (range(2), range(3, 5)) }
+155/9: { x:y  for x, y in (range(2), range(3, 5)) }
+155/10: { x:y  for x, y in (range(2), range(3, 5)) }
+155/11: { x:y  for x, y in (range(2), range(3, 5)) }
+155/12: { x:y  for x, y in (range(2), range(3, 5)) }
+155/13: { x:y  for x, y in (range(2), range(3, 5)) }
+155/14: { x:y  for x, y in (range(2), range(4, 6)) }
+155/15: { x:y  for x, y in (range(2), range(4, 6),range(2,3)) }
+155/16: { x:y  for x, y in (range(2), range(4, 6), range(2,3)) }
+155/17: { x:y  for x, y in (range(2), range(4, 6), range(2)) }
+155/18: dir(os)
+155/19: import os
+155/20: dir(os)
+155/21: df -k
+155/22: os.ttyname()
+155/23: df
+155/24: clear
+155/25: ls
+155/26: ls -ltr
+155/27: more 09_july
+155/28: ls
+155/29: ls
+155/30: ls -ltr
+155/31: more find_fs.py
+155/32: more kanna.py
+155/33: clear
+155/34: ls
+156/1: fd = open("errpt",'r')
+156/2: ls
+156/3: cd lesson
+156/4: ls
+156/5: cd Myrepo/
+156/6: ls
+156/7: more errpt
+156/8: errpt
+156/9: fd = open("errpt","r")
+156/10: fd.read()
+156/11: fd.close()
+156/12: type(fd)
+156/13: dir(fd)
+156/14: fd.close()
+156/15: fd.close()
+156/16: fd = open("errpt","r")
+156/17: fd.close()
+156/18:
+with open("errpt","r") as fd:
+    for line in fd:
+        line.next()
+156/19:
+with open("errpt","r") as fd:
+    for line in fd:
+         next
+156/20:
+with open("errpt","r") as fd:
+    for line in fd:
+         next
+156/21: line
+156/22:
+for fields in line:
+    fields = fields.split()
+    print fields
+156/23: line
+156/24: line.split
+156/25: line.split()
+156/26: line
+156/27: line.split()
+156/28:
+if "1FE2DD91" in line:
+    line.next()
+156/29:
+if "1FE2DD91" in line:
+             print next(line.split())
+156/30: type(line)
+156/31: dir(line)
+156/32: line.index("1FE2DD91")
+156/33: line.split().index("1FE2DD91")
+156/34: i=line.split().index("1FE2DD91")
+156/35: line.split()[i+1]
+157/1: import io
+157/2: import string
+157/3: dir(string)
+157/4: dir(io)
+157/5: dir()
+156/36: dir(split)
+156/37: dir
+156/38: ls
+156/39: dir(1)
+156/40: dir(real)
+156/41: df -k
+156/42: pwd
+157/6: dir()
+157/7: dir()
+157/8: dir(string)
+157/9:
+dir([]_
+
+)
+157/10: dir([])
+157/11: dir({})
+157/12: clear
+157/13: dir({})
+157/14: import os
+157/15: dir(os)
+157/16: os.remove()
+157/17: os.utim()
+157/18: os.utime()
+158/1: ls -ltr
+158/2: ls
+160/1:
+class A:
+    def a1(self):
+        print ("calling from Class A")
+160/2:
+class B(A):
+    def b(self)
+       print ("calling from Class B")
+160/3:
+class B(A):
+    def b(self):
+       print ("calling from Class B")
+160/4: b = B()
+160/5: b.a1()
+160/6: b.b()
+160/7: ls -ltr
+157/19: import os
+157/20: os.uname()
+157/21: ls
+157/22: ls -ltr
+157/23: cd ../
+157/24: ls
+157/25: ls -ltr
+157/26: cd Myrepo/
+157/27: ls
+157/28: more getdisk.sh
+157/29: ls -ltr
+157/30: import commands
+157/31: dir(commands)
+157/32: getstatusoutput("/usr/bin/ls")
+157/33: commands.getstatusoutput('/usr/bin/ls")
+157/34: commands.getstatusoutput("/usr/bin/ls")
+157/35: i=commands.getstatusoutput("/usr/bin/ls")
+157/36: type(i)
+157/37: i[0]
+157/38: i[1].split("\n")
+157/39: dir(commands)
+157/40: i= commands.getstatus("/usr/bin/ls")
+157/41: i
+157/42: i= commands.getstatus("numdivzero.py")
+157/43: u
+157/44: i
+157/45: type(i)
+157/46: i.split()[9]
+157/47: i.split()[8]
+157/48: dir(commands)
+157/49: commands.mk2arg("ls","-l")
+157/50: commands.mk2arg("ls"," -l")
+157/51: commands.mk2arg("ls"," -l")
+157/52: import hashlib
+157/53: dir(hashlib)
+157/54: import string
+157/55: import random
+157/56:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase) for i in range(length))
+157/57: randomstr(16)
+157/58: randomstr(16)
+157/59: randomstr(16)
+157/60: randomstr(16)
+157/61: randomstr(16)
+157/62: randomstr(16)
+157/63: dir(random)
+157/64: randomstr(16)
+157/65: randomstr(16)
+157/66: randomstr(16)
+157/67: dir(random)
+157/68: dir(random)
+157/69: randomstr(16)
+157/70: randomstr(16)
+157/71: randomstr(16)
+157/72: randomstr(16)
+157/73: randomstr(16)
+157/74: randomstr(16)
+157/75: randomstr(16)
+157/76: randomstr(16)
+157/77: randomstr(16)
+157/78: randomstr(16)
+157/79: randomstr(16)
+157/80:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/81: randomstr(16)
+157/82: randomstr(16)
+157/83: randomstr(16)
+157/84: randomstr(16)
+157/85: randomstr(16)
+157/86: randomstr(16)
+157/87: randomstr(16)
+157/88: randomstr(16)
+157/89: randomstr(16)
+157/90: randomstr(16)
+157/91: randomstr(16)
+157/92: randomstr(16)
+157/93:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/94: randomstr(16)
+157/95: randomstr(16)
+157/96: randomstr(16)
+157/97: randomstr(16)
+157/98: randomstr(16)
+157/99: randomstr(16)
+157/100: randomstr(16)
+157/101: randomstr(16)
+157/102: randomstr(16)
+157/103: randomstr(16)
+157/104: randomstr(16)
+157/105: randomstr(16)
+157/106: randomstr(16)
+157/107: randomstr(16)
+157/108: randomstr(16)
+157/109: randomstr(16)
+157/110: randomstr(16)
+157/111: randomstr(16)
+157/112: randomstr(16)
+157/113: randomstr(16)
+157/114: randomstr(16)
+157/115: randomstr(16)
+157/116: randomstr(16)
+157/117: randomstr(16)
+157/118: randomstr(16)
+157/119:
+def randomstr(length):
+    return ''.join(random.choice("i.string.lowercase + string.digits) for i in range(length))
+157/120:
+def randomstr(length):
+    return ''.join(random.choice("i."+ string.lowercase + string.digits) for i in range(length))
+157/121: randomstr(16)
+157/122: randomstr(16)
+157/123: randomstr(16)
+157/124: randomstr(16)
+157/125: randomstr(16)
+157/126: randomstr(16)
+157/127: randomstr(16)
+157/128: randomstr(16)
+157/129:
+def randomstr(length):
+    return 'i.'.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/130: randomstr(16)
+157/131: randomstr(16)
+157/132: randomstr(16)
+157/133: randomstr(16)
+157/134: randomstr(16)
+157/135: randomstr(16)
+157/136: randomstr(16)
+157/137: randomstr(16)
+157/138: randomstr(16)
+157/139: randomstr(16)
+157/140: randomstr(16)
+157/141: randomstr(16)
+157/142: randomstr(16)
+157/143:
+def randomstr(length):
+    return 'i'.join("."+ random.choice(string.lowercase + string.digits) for i in range(length))
+157/144: randomstr(16)
+157/145: randomstr(16)
+157/146: randomstr(16)
+157/147: randomstr(16)
+157/148:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/149: randomstr(16)
+157/150: randomstr(16)
+157/151: randomstr(16)
+157/152: randomstr(16)
+157/153: randomstr(16)
+157/154: randomstr(16)
+157/155: randomstr(16)
+157/156: randomstr(16)
+157/157: randomstr(16)
+157/158: randomstr(16)
+157/159:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice( "i." +string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/160: randomstr(16)
+157/161: randomstr(16)
+157/162: randomstr(16)
+157/163:
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice( "i." +string.lowercase + string.digits) for i in range(length))
+def randomstr(length):
+    return ''.join(random.choice(string.lowercase + string.digits) for i in range(length))
+157/164: randomstr(16)
+157/165: randomstr(16)
+157/166: randomstr(16)
+157/167: randomstr(16)
+157/168: randomstr(16)
+157/169: randomstr(16)
+157/170: randomstr(16)
+157/171: randomstr(16)
+157/172: randomstr(16)
+157/173: randomstr(16)
+157/174: randomstr(16)
+157/175: randomstr(16)
+157/176: randomstr(16)
+157/177: randomstr(16)
+157/178: randomstr(16)
+157/179: randomstr(16)
+157/180: randomstr(16)
+157/181: randomstr(16)
+157/182: randomstr(16)
+157/183: randomstr(16)
+157/184: randomstr(16)
+157/185: randomstr(16)
+157/186: randomstr(16)
+157/187: randomstr(16)
+157/188: randomstr(16)
+157/189: randomstr(16)
+157/190: randomstr(16)
+157/191: randomstr(16)
+157/192: randomstr(16)
+157/193: randomstr(16)
+157/194: randomstr(16)
+157/195: randomstr(16)
+157/196: randomstr(16)
+157/197: randomstr(16)
+157/198: randomstr(16)
+157/199: randomstr(16)
+157/200: randomstr(16)
+157/201: randomstr(16)
+157/202: randomstr(16)
+157/203: randomstr(16)
+157/204: randomstr(16)
+157/205: randomstr(16)
+157/206: randomstr(16)
+157/207: randomstr(16)
+157/208: randomstr(16)
+157/209: randomstr(16)
+157/210: randomstr(16)
+157/211: randomstr(16)
+157/212: randomstr(16)
+157/213: randomstr(16)
+157/214: randomstr(16)
+157/215: randomstr(16)
+157/216: randomstr(16)
+157/217: randomstr(16)
+157/218: randomstr(16)
+157/219: randomstr(16)
+157/220: randomstr(16)
+157/221: randomstr(16)
+157/222: randomstr(16)
+157/223: import uuid
+157/224: uuid.uuid1()
+157/225: uuid.uuid4()
+157/226: uuid.uuid4()
+157/227: uuid.uuid4()
+157/228: uuid.uuid4()
+157/229: uuid.uuid4()
+157/230: uuid.uuid4()
+157/231: uuid.uuid4()
+157/232: uuid.uuid4()
+157/233: uuid.uuid4()
+157/234: uuid.uuid4()
+157/235: uuid.uuid4()
+157/236: uuid.uuid4()
+157/237: uuid.uuid4()
+157/238: uuid.uuid4()
+157/239: uuid.uuid4()
+157/240: uuid.uuid4()
+157/241: uuid.uuid4()
+157/242: uuid.uuid4()
+157/243: uuid.uuid4()
+157/244: uuid.uuid4()
+157/245: uuid.uuid4()
+157/246: uuid.uuid4()
+157/247: uuid.uuid1()
+157/248: uuid.uuid1()
+157/249: uuid.uuid1()
+157/250: uuid.uuid1()
+157/251: uuid.uuid1()
+157/252: dir(uuid)
+157/253: uuid.uuid5()
+157/254: uuid.uuid1()
+157/255: uuid.uuid1()
+157/256: uuid.uuid1()
+157/257: uuid.uuid1()
+157/258: uuid.uuid1()
+157/259: uuid.uuid1()
+157/260: uuid.uuid1()
+157/261: uuid.uuid1()
+157/262: uuid.uuid1()
+157/263: uuid.uuid1()
+157/264: uuid.uuid1()
+157/265: ds=uuid.uuid1()
+157/266: ds
+157/267: ds=uuid.uuid1()
+157/268: dir(uuid)
+157/269: uuid.uuid1()
+157/270: ls
+161/1: scsiid=[3:0:1:0]
+161/2: scsiid="3:0:1:0"
+161/3: scsiid.split(":")
+161/4: dir(scsiid)
+161/5: scsiid.split(":")
+161/6:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        print "OK"
+161/7:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        print "OK"
+161/8: scsiid.isdigit()
+161/9: scsiid = scsiid.split(":")
+161/10: scsiid
+161/11: scsiid.isdigit()
+161/12: scsiid="3:0:1:0"
+161/13: scsiid.split(":")
+161/14: scsiid.split(":").isdidigit()
+161/15: scsiid.split(":").isdigit()
+161/16:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        pass
+161/17:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        pass
+161/18:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        pass
+    else:
+        print "input not valid"
+161/19:
+for i in scsiid.split(":"):
+    if i.isdigit():
+        pass
+    else:
+        print "input not valid"
+161/20: scsiid="3:0:1:0"
+161/21: scsiid="[3:0:1:0]"
+161/22: type(scsiid)
+162/1: ls
+162/2: ls -ltr
+162/3: more file.
+162/4: more file.py
+162/5: ls
+162/6: ls -ltr
+162/7: more files.py
+162/8: more post_script.sh
+162/9: ls
+162/10: ls -ltr
+162/11: more getdisk.sh
+162/12: ls
+162/13: more file.py
+162/14: more files.py
+162/15: ls
+163/1: ?
+163/2: ls
+164/1: print "WELCOME"
+164/2: ied
+164/3: pwd
+164/4: clear
+165/1: single= { 1:"one",2:"Two",3:"Three",4:"Four",5:"Five"}
+165/2: single.get(6,"Key Not Found")
+165/3: single.get(5,"Key Not Found")
+165/4: dir(single)
+165/5: single.get()
+165/6: single.copy(digits)
+165/7: digits={}
+165/8: single.copy(digits)
+165/9: single.viewvalues()
+165/10: single.viewkeys()
+165/11: single.itervalues()
+165/12:
+for value in single.itervalues():
+     print value
+165/13: myList=[i for i in range(10)]
+165/14: myList
+165/15: newList=[myList[i] for i in range(1,3)]
+165/16: newList=myList[1:3]
+165/17: newList
+165/18: from Tkinter import *
+165/19: import threading
+165/20: dir(threading)
+165/21: import threading
+165/22: import socket
+165/23: print(threading)
+165/24: print(socket)
+165/25: 2+1
+165/26: _
+165/27: testSet = {i * 2 for i in xrange(10)}
+165/28: testSet
+165/29: more /usr/lib64/python2.7/socket.pyc
+165/30: testSet
+165/31: testSet
+165/32: testSet
+165/33: testSet
+165/34: testSet
+165/35: testSet
+165/36: testSet
+165/37: testSet
+165/38: testSet
+165/39: testSet
+165/40: testSet
+165/41: testSet
+165/42: testSet
+165/43: testSet
+165/44: testSet
+165/45: testSet
+165/46: testSet
+165/47: testSet
+165/48: testSet
+165/49: testSet
+165/50: testSet
+165/51: testSet
+165/52: testSet
+165/53: testSet
+165/54: testSet
+165/55: testSet
+165/56: testSet
+165/57: testSet
+165/58: testSet
+165/59: testSet
+165/60: testSet
+165/61: testSet
+165/62: testSet
+165/63: testSet
+165/64: testSet
+165/65: testSet
+165/66: testSet
+165/67: testSet
+165/68: testSet
+165/69: test = ['I', 'Like', 'Python', 'automation']
+165/70: print ''.join(test)
+165/71: print ' '.join(test)
+165/72: testlist = [10, 20, 30]
+165/73:
+for i, value in enumerate(testlist):
+    print(i, ': ', value)
+165/74:
+for i, value in enumerate(testlist):
+    print(i, ':', value)
+165/75: import sys
+165/76: x=1001
+165/77: print(sys.getrecursionlimit())
+165/78: print(sys.getrecursionlimit())
+165/79: print(sys.getrecursionlimit())
+165/80: print(sys.getrecursionlimit())
+165/81: print(sys.getrecursionlimit())
+165/82: sys.setrecursionlimit(x)
+165/83: print(sys.getrecursionlimit())
+165/84: x=1
+165/85: import sys
+165/86: print(sys.getsizeof(x))
+165/87: print(sys.getsizeof(x))
+165/88: print(sys.getsizeof(x))
+165/89: import sys
+165/90: lprint=lambda *args:sys.stdout.write(" ".join(map(str,args)))
+165/91: lprint("python", "tips",1000,1001)
+165/92: lprint("Ashwin","Dhuwarakesh","Karthik","Raja")
+165/93: t1=(1,2,3,4)
+165/94: t2 = (10, 20, 30)
+165/95: dict zip(t1,t2)
+165/96: dict (zip(t1,t2))
+165/97: t2 = (10, 20, 30,40,50)
+165/98: dict (zip(t1,t2))
+165/99: ls
+165/100: ls
+165/101: dict{:}
+165/102: ls
+165/103: zip
+165/104: ls
+165/105: more 1
+165/106: more interchange.py
+165/107: more sysinfo.py
+166/1: import socket
+166/2: dir(socket)
+166/3: socket.gethostname()
+166/4: socket.gethostbyname("chefserver")
+166/5: host="www.google.com"
+166/6: socket.gethostbyname(host)
+166/7: s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+166/8: port = 80
+166/9: remote_ip = socket.gethostbyname( host )
+166/10: s.connect((remote_ip , port))
+166/11: w=s.connect((remote_ip , port))
+166/12: s.close()
+166/13: dir(s)
+166/14: type(s)
+166/15: s.proto()
+166/16: type(s)
+166/17: dir(s)
+166/18: s.fileno
+166/19: s.fileno
+167/1: clear
+168/1: import sys
+168/2: type sys?
+168/3: import os
+168/4: type os?
+168/5: type os?
+168/6: type os
+168/7: type os?
+168/8: os.defpath
+168/9: os.curdir()
+168/10: os.curdir
+168/11: os.curdir
+168/12: type os?
+168/13: type os?
+168/14: type os
+170/1: print "WELCOME"
+170/2: import sys
+170/3: sys.version
+170/4: import commands
+170/5: arch=commands.getoutput("dmidecode -s system-product-name")
+170/6: arch
+170/7:
+if arch == "VirtualBox":
+     print "SUCCESS"
+else:
+     print "FAIL"
+170/8: fstype=commands.getoutput("mount -v")
+170/9: fstype
+170/10: fstype = fstype.split("\n")
+170/11: fstype
+170/12:
+if fstype.split()[2] =="/":
+      print "SUCCESS"
+else:
+      print "FAIL"
+170/13:
+for fields in fstype:
+     if fields.split()[2] == "/":
+         print "SUCCESS"
+     else:
+         print "FAIL"
+170/14:
+for fields in fstype:
+     if fields.split()[2] == "/":
+         print "SUCCESS"
+     else:
+         pass
+170/15:
+for fields in fstype:
+    if fileds.split()[2] == "/" and ( fileds.split()[4] == "xfs" or fileds.split()[4] == "ext4" or fileds.split()[4] == "ext3"):
+        print "SUCCESS"
+    else:
+        print "FAIL"
+170/16:
+for fields in fstype:
+    if fields.split()[2] == "/" and ( fields.split()[4] == "xfs" or fields.split()[4] == "ext4" or fields.split()[4] == "ext3"):
+        print "SUCCESS"
+    else:
+        print "FAIL"
+170/17:
+for fields in fstype:
+    if fields.split()[2] == "/" and ( fields.split()[4] == "xfs" or fields.split()[4] == "ext4" or fields.split()[4] == "ext3"):
+        print "SUCCESS"
+    else:
+        pass
+170/18:
+for fields in fstype:
+    if fields.split()[2] == "/" and ( fields.split()[4] == "xfs" or fields.split()[4] == "ext4" or fields.split()[4] == "ext3"):
+        print "SUCCESS"
+170/19: import os
+170/20: type os?
+170/21: import sys
+170/22: type sys?
+170/23: echo $TERM
+171/1: import sys
+171/2: echo $TERM
+171/3: type sys?
+171/4: import socket
+171/5: type socket?
+171/6: import types
+171/7: type types?
+171/8: type types?
+171/9: ls
+171/10: a=10
+171/11: b=10
+171/12: a,b = b, a
+171/13: a
+171/14: a
+171/15: a=20
+171/16: a=10
+171/17: a=20
+171/18: b=5
+171/19: a,b = b, a
+171/20: a
+171/21: b
+171/22: clear
+171/23: ls
+171/24: ls -ltr
+172/1: result = lambda x,y:(x+y,x-y)
+172/2: result(10,20)
+172/3: result(20,10)
+172/4: more post_script.sh
+173/1: import hashlib
+173/2: type hashlib?
+173/3: ls -ltr
+174/1: import hashlib
+174/2: hash_object = hashlib.md5(b"Hello World")
+174/3: print (hash_object.hexdigest())
+174/4: b10a8db164e0754105b7a99be72e3fe5
+174/5: import copy
+174/6: type copy?
+174/7: import pickle
+174/8: type pickle
+174/9: type pickle?
+174/10: type pickle
+175/1: ls -ltr
+175/2: ! more infraverification.sh
+175/3: ! more infraverification.sh
+176/1: import commands
+176/2: commands.getoutput("cat /etc/fstab")
+176/3: clear
+176/4: ls -ltr
+176/5: more 1
+176/6: more post-script.py
+176/7: ls -ltr
+176/8: ls -ltr
+177/1: import selinux
+177/2: dir(selinux)
+177/3: type selinux?
+177/4: type selinux?
+177/5: type selinux?
+177/6: dir(selinux)
+177/7: selinux.stat("/root")
+178/1: ?
+178/2: ls
+178/3: ! post-script.py
+178/4: ! more post-script.py
+179/1: import paramiko
+180/1: str=Raja)
+180/2: str="Raja)"
+180/3: str.strip(")")
+180/4: str.strip())
+180/5: str.strip(')')
+182/1: type str?
+182/2: type str
+182/3: import sys
+182/4: type sys?
+182/5: sys.exit()
+182/6: sys.getprofile()
+182/7: sys.getrefcount()
+182/8: sys.getsizeof()
+182/9: sys.getsizeof(str)
+182/10: sys.getsizeof([])
+182/11: import getopts
+182/12: import getopt
+182/13: dir(getopt)
+182/14: x=10
+182/15: del x
+182/16: type(x)
+182/17: x=10
+182/18: type(x)
+182/19: del x
+182/20: a=10
+182/21: b=10
+182/22:
+if ( a is b):
+    print "A is same"
+else:
+    print "B is not same"
+182/23:
+for i in range(1,11):
+    for j in range(1,11):
+        print k
+182/24:
+for i in range(1,11):
+    for j in range(1,11):
+        print k = i*j
+182/25:
+for i in range(1,11):
+    for j in range(1,11):
+        print k = i*j
+182/26:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print k
+182/27:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print k
+182/28:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print ("%d" %k)
+182/29:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print ("%d" %k)
+  print
+182/30:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print ("%d" %k)
+    print()
+182/31:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print ("%d" %k)
+    print
+182/32:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k, end=" ")
+    print
+182/33: from __future__ import print_function
+182/34:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k, end=" ")
+    print
+182/35:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k, end=" ")
+    print("\n")
+182/36:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k, end=" ")
+    print("\n")
+182/37:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k, end=" ")
+    print("\n")
+182/38:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/39:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/40:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/41:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/42:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/43:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/44:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/45:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/46:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/47:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/48:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/49:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/50:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/51:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/52:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/53:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/54:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/55:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/56:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/57:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/58:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/59:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/60:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/61:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/62:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/63:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/64:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/65:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/66:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/67:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/68:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/69:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/70:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/71:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/72:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/73:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/74:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/75:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/76:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/77:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/78:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/79:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/80:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/81:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/82:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+182/83:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+183/1: print "WELCOME"
+183/2: ls
+183/3: ls -ltr
+183/4: more 1
+183/5: more infraverification.sh
+183/6: ls -ltr
+183/7: more sysinfo.py
+183/8: more infraverification.sh
+183/9: clear
+184/1: ls
+184/2:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+184/3: from __future__ import print_function
+184/4:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+184/5:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print
+184/6:
+for i in range(1,11):
+    for j in range(1,11):
+        k = i*j
+        print (k,end=" ")
+    print("\n")
+184/7: dir(__future__)
+184/8: dir(__future__)
+184/9: dir(print_function)
+186/1: import json
+186/2: json_string = '{"first_name": "Guido", "last_name":"Rossum"}'
+186/3: parsed_json = json.loads(json_string)
+186/4: parsed_json
+186/5: dir(json)
+186/6: ls -ltr
+186/7: pwd
+186/8: more getdisk.sh
+186/9: ls -ltr
+186/10: more sysinfo.py
+186/11: ls
+186/12: more 1
+186/13: more finddf.py
+186/14: ls
+188/1: more df.awk
+188/2: ls
+188/3: ls -ltr
+188/4: more data.csv
+188/5: ls
+188/6: ls -ltr
+188/7: more getdisk.sh
+188/8: ls
+189/1: ls
+   1: newlist = [ 10,20,30,40,50 ]
+   2: ls
+   3:
+class bank():
+    pass
+  def saving():
+    pass
+   4:
+class bank():
+    pass
+    def saving():
+       pass
+    def current():
+       pass
+   5: raja = bank()
+   6: type(raja)
+   7: raja.saving()
+   8: raja.saving
+   9: raja.current
+  10: type(bank)
+  11: type(raja.saving)
+  12: type(raja)
+  13: dir(raja)
+  14:
+def add(x,y):
+    return x + y
+  15: type(add)
+  16: add(10,20)
+  17: result = add(10,20)
+  18: result
+  19: result
+  20: add(x=10,y=20)
+  21:
+def new_add(x,*arg):
+    print (x,arg)
+  22: new_add(10)
+  23: new_add(10,20)
+  24: new_add(10,20,30,40)
+  25:
+def new_add(x,**arg):
+    print (x,arg)
+  26: new_add(10,20,30,40)
+  27: new_add(10,20)
+  28:
+def new_add(x,**arg):
+    print(x,arg)
+  29: new_add(10)
+  30: new_add(10,20)
+  31: new_add(10,20,30,40)
+  32: new_add(10,{20,30,40})
+  33: new_add(10)
+  34: new_add(10)
+  35: new_add(10)
+  36: new_add(10)
+  37: new_add(10)
+  38: new_add(x=10,b,c)
+  39: new_add(x=10,b=20,c=30)
+  40: reduce
+  41:
+def square():
+    print ("Function is started")
+    for i in x:
+        yied i
+  42:
+def square():
+    print ("Function is started")
+    for i in x:
+        yied(i)
+  43: square([2,3,9,8])
+  44:
+def square(x):
+    print ("Function is started")
+    for i in x:
+        yield(i)
+  45: square([2,3,9,8])
+  46: square([2,3,9,8])
+  47: square([2,3,9,8])
+  48: square([2,3,9,8])
+  49: square([2,3,9,8])
+  50: next(square([2,3,9,8]))
+  51: next(square([2,3,9,8]))
+  52: next(square([2,3,9,8]))
+  53: next(square([2,3,9,8]))
+  54: next(square([2,3,9,8]))
+  55: next(square([2,3,9,8]))
+  56: next(square([2,3,9,8]))
+  57: next(square([2,3,9,8]))
+  58: next(square([2,3,9,8]))
+  59: next(square([2,3,9,8]))
+  60: next.square()
+  61: next.square()
+  62: next.square()
+  63: next.square()
+  64: next.square()
+  65: square([2,3,9,8]).next()
+  66: square([2,3,9,8]).next()
+  67: square([2,3,9,8]).next()
+  68: square([2,3,9,8])
+  69: square([2,3,9,8])
+  70: square([2,3,9,8])
+  71: square([2,3,9,8])
+  72: square([2,3,9,8])
+  73: raja = square(1000)
+  74: raja = next()
+  75: raja
+  76:
+next(square()
+)
+  77: next(square(100))
+  78: next(square(10))
+  79: newlist = range(10)
+  80: newlist
+  81: newlist = range(1,11)
+  82: newlist
+  83: result = list(filter(lambda x:x%2))
+  84: result = list(filter(lambda x:x%2==0))
+  85: result = filter(lambda x:x%2==0)
+  86: result = filter(lambda x:x%2==0,newlist)
+  87: result
+  88:
+for i, value in enumerate(testlist):
+    print(i, ': ', value)
+  89: { x:y  for x, y in (range(2), range(4, 6), range(2,3)) }
+  90: { x:y  for x, y in (range(2), range(4, 6))}
+  91: %hist
+  92: %history -g
+  93: %history -g -f allpython.txt

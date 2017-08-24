@@ -1,0 +1,744 @@
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> naga = "_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false"
+>>> naga.split(:)
+  File "<stdin>", line 1
+    naga.split(:)
+               ^
+SyntaxError: invalid syntax
+#!/usr/bin/env python
+>>> naga.split(":")
+['_launchservicesd', '*', '239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']
+>>> naga.split(":")[0]
+'_launchservicesd'
+>>> naga.split(":")[0][1]
+'l'
+>>> naga.split(":")[0][-1]
+'d'
+>>> (naga.split(":"))[0][-1]
+'d'
+>>> naga.split(":")[0][-1]
+'d'
+>>> naga.split(":")
+['_launchservicesd', '*', '239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']
+>>> type(naga.split(":"))
+<type 'list'>
+>>> type(naga.split(":")[0])
+<type 'str'>
+>>> raj = ['_launchservicesd', '*', '239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']
+>>> raj[0]
+'_launchservicesd'
+>>> raj[0][=-1]
+  File "<stdin>", line 1
+    raj[0][=-1]
+           ^
+SyntaxError: invalid syntax
+#!/usr/bin/env python
+>>> raj[0][-1]
+'d'
+>>> exit()
+raj:python nagee$
+raj:python nagee$ vi dic.py
+raj:python nagee$ python dic.py
+{'_lda': '/usr/bin/false\n', '_avbdeviced': '/usr/bin/false\n', '_serialnumberd': '/usr/bin/false\n', '_dovecot': '/usr/bin/false\n', '_tokend': '/usr/bin/false\n', '_geod': '/usr/bin/false\n', '_dovenull': '/usr/bin/false\n', '_eppc': '/usr/bin/false\n', '_coreaudiod': '/usr/bin/false\n', '_atsserver': '/usr/bin/false\n', '_mysql': '/usr/bin/false\n', '_cvs': '/usr/bin/false\n', '_krb_kadmin': '/usr/bin/false\n', '_windowserver': '/usr/bin/false\n', '_netbios': '/usr/bin/false\n', '_svn': '/usr/bin/false\n', '_krb_kerberos': '/usr/bin/false\n', '_networkd': '/usr/bin/false\n', '_devdocs': '/usr/bin/false\n', '_launchservicesd': '/usr/bin/false\n', '_assetcache': '/usr/bin/false\n', '_www': '/usr/bin/false\n', '_xcscredserver': '/usr/bin/false\n', '_appleevents': '/usr/bin/false\n', '_timezone': '/usr/bin/false\n', '_krb_krbtgt': '/usr/bin/false\n', '_cvmsroot': '/usr/bin/false\n', '_trustevaluationagent': '/usr/bin/false\n', '_ard': '/usr/bin/false\n', '_unknown': '/usr/bin/false\n', '_webauthserver': '/usr/bin/false\n', '_uucp': '/usr/sbin/uucico\n', '_cyrus': '/usr/bin/false\n', '_ftp': '/usr/bin/false\n', '_krb_changepw': '/usr/bin/false\n', '_taskgated': '/usr/bin/false\n', '_securityagent': '/usr/bin/false\n', '_installer': '/usr/bin/false\n', '_lp': '/usr/bin/false\n', '_warmd': '/usr/bin/false\n', 'nobody': '/usr/bin/false\n', '_devicemgr': '/usr/bin/false\n', '_mailman': '/usr/bin/false\n', '_appserver': '/usr/bin/false\n', '_teamsserver': '/usr/bin/false\n', '_mcxalr': '/usr/bin/false\n', '_amavisd': '/usr/bin/false\n', '_jabber': '/usr/bin/false\n', '_spotlight': '/usr/bin/false\n', '_krbtgt': '/usr/bin/false\n', '_screensaver': '/usr/bin/false\n', '_calendar': '/usr/bin/false\n', '_xcsbuildagent': '/usr/bin/false\n', '_postfix': '/usr/bin/false\n', '_installassistant': '/usr/bin/false\n', '_update_sharing': '/usr/bin/false\n', '_postgres': '/usr/bin/false\n', '_sandbox': '/usr/bin/false\n', '_qtss': '/usr/bin/false\n', 'daemon': '/usr/bin/false\n', '_coremediaiod': '/usr/bin/false\n', '_netstatistics': '/usr/bin/false\n', '_sshd': '/usr/bin/false\n', '_softwareupdate': '/usr/bin/false\n', '_kadmin_changepw': '/usr/bin/false\n', '_krb_anonymous': '/usr/bin/false\n', '_kadmin_admin': '/usr/bin/false\n', '_locationd': '/usr/bin/false\n', '_appowner': '/usr/bin/false\n', '_usbmuxd': '/usr/bin/false\n', '_clamav': '/usr/bin/false\n', '_scsd': '/usr/bin/false\n', '_dpaudio': '/usr/bin/false\n', 'root': '/bin/sh\n', '_ces': '/usr/bin/false\n', '_mdnsresponder': '/usr/bin/false\n'}
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ vi dic.py
+raj:python nagee$ python dic.py
+['_lda', '_avbdeviced', '_serialnumberd', '_dovecot', '_tokend', '_geod', '_dovenull', '_eppc', '_coreaudiod', '_atsserver', '_mysql', '_cvs', '_krb_kadmin', '_windowserver', '_netbios', '_svn', '_krb_kerberos', '_networkd', '_devdocs', '_launchservicesd', '_assetcache', '_www', '_xcscredserver', '_appleevents', '_timezone', '_krb_krbtgt', '_cvmsroot', '_trustevaluationagent', '_ard', '_unknown', '_webauthserver', '_uucp', '_cyrus', '_ftp', '_krb_changepw', '_taskgated', '_securityagent', '_installer', '_lp', '_warmd', 'nobody', '_devicemgr', '_mailman', '_appserver', '_teamsserver', '_mcxalr', '_amavisd', '_jabber', '_spotlight', '_krbtgt', '_screensaver', '_calendar', '_xcsbuildagent', '_postfix', '_installassistant', '_update_sharing', '_postgres', '_sandbox', '_qtss', 'daemon', '_coremediaiod', '_netstatistics', '_sshd', '_softwareupdate', '_kadmin_changepw', '_krb_anonymous', '_kadmin_admin', '_locationd', '_appowner', '_usbmuxd', '_clamav', '_scsd', '_dpaudio', 'root', '_ces', '_mdnsresponder']
+raj:python nagee$
+
+Session Restored
+
+Last login: Tue Jul  4 12:55:25 on ttys001
+raj:python nagee$ clear
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ vi /tmp/naga.py
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> naga = { "naga":2, "raj":3 }
+>>>
+>>>
+>>> nag
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nag' is not defined
+>>> naga
+{'raj': 3, 'naga': 2}
+>>> [lambda x: x + 10 range(5)]
+  File "<stdin>", line 1
+    [lambda x: x + 10 range(5)]
+                          ^
+SyntaxError: invalid syntax
+>>> (lambda x: x + 10 range(5))
+  File "<stdin>", line 1
+    (lambda x: x + 10 range(5))
+                          ^
+SyntaxError: invalid syntax
+>>> range(5)
+[0, 1, 2, 3, 4]
+>>> (lambda x: x + 10, range(5))
+(<function <lambda> at 0x103b17230>, [0, 1, 2, 3, 4])
+>>> [lambda x: x + 10, range(5)]
+[<function <lambda> at 0x103b179b0>, [0, 1, 2, 3, 4]]
+>>> raj = [lambda x: x + 10, range(5)]
+>>> raj
+[<function <lambda> at 0x103b17230>, [0, 1, 2, 3, 4]]
+>>> raj = map[lambda x: x + 10, range(5)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+>>> raj = map(lambda x: x + 10, range(5))
+>>> raj
+[10, 11, 12, 13, 14]
+>>> raj = map(lambda x: if x > 5, range(5))
+  File "<stdin>", line 1
+    raj = map(lambda x: if x > 5, range(5))
+                         ^
+SyntaxError: invalid syntax
+>>> raj = filter(lambda x: if x > 5, range(5))
+  File "<stdin>", line 1
+    raj = filter(lambda x: if x > 5, range(5))
+                            ^
+SyntaxError: invalid syntax
+>>> raj = map(lambda x: x > 5, range(5))
+>>> raj
+[False, False, False, False, False]
+>>> raj = map(lambda x: x > 5, range(8))
+>>> raj
+[False, False, False, False, False, False, True, True]
+>>> naga
+{'raj': 3, 'naga': 2}
+>>> raj = { "preeti": 3}
+>>> naga
+{'raj': 3, 'naga': 2}
+>>> naga["mat"] = raj
+>>> naga
+{'raj': 3, 'mat': {'preeti': 3}, 'naga': 2}
+>>> naga[mat]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mat' is not defined
+>>> naga["mat"]
+{'preeti': 3}
+>>> naga["mat"]['preeti']
+3
+>>> naga["mat1"] = range5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'range5' is not defined
+>>> naga["mat1"] = range(5)
+>>> naga
+{'mat1': [0, 1, 2, 3, 4], 'raj': 3, 'mat': {'preeti': 3}, 'naga': 2}
+>>> naga[mat1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mat1' is not defined
+>>> naga["mat1"]
+[0, 1, 2, 3, 4]
+>>> naga["mat1"][0]
+0
+>>> naga["mat1"][0][1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object has no attribute '__getitem__'
+>>> naga["mat1"][1]
+1
+>>> { x: x + 10 range(10)}
+  File "<stdin>", line 1
+    { x: x + 10 range(10)}
+                    ^
+SyntaxError: invalid syntax
+>>> { x: x + 10, range(10)}
+  File "<stdin>", line 1
+    { x: x + 10, range(10)}
+                          ^
+SyntaxError: invalid syntax
+>>> [x: x + 10 range(10)]
+  File "<stdin>", line 1
+    [x: x + 10 range(10)]
+      ^
+SyntaxError: invalid syntax
+>>> [x: x + 10, range(10)]
+  File "<stdin>", line 1
+    [x: x + 10, range(10)]
+      ^
+SyntaxError: invalid syntax
+>>> [x: x + 10, range(10)]
+KeyboardInterrupt
+>>> [ x for i in range(10) ]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> [ x for x in range(10) ]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> [ x, y for x,y in range(10) ]
+  File "<stdin>", line 1
+    [ x, y for x,y in range(10) ]
+             ^
+SyntaxError: invalid syntax
+>>> { x, y for x,y in range(10) }
+  File "<stdin>", line 1
+    { x, y for x,y in range(10) }
+             ^
+SyntaxError: invalid syntax
+>>> { x, y for x, y in range(10) }
+  File "<stdin>", line 1
+    { x, y for x, y in range(10) }
+             ^
+SyntaxError: invalid syntax
+>>> {x, y for x, y in (range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    {x, y for x, y in (range(2), range(3, 5)) }
+            ^
+SyntaxError: invalid syntax
+>>> range(2)
+[0, 1]
+>>> range(3, 5)
+[3, 4]
+>>> { x, y for x, y in ((1, 2), (3, 4) }
+  File "<stdin>", line 1
+    { x, y for x, y in ((1, 2), (3, 4) }
+             ^
+SyntaxError: invalid syntax
+>>> { x, y for x, y in ((1, 2), (3, 4)) }
+  File "<stdin>", line 1
+    { x, y for x, y in ((1, 2), (3, 4)) }
+             ^
+SyntaxError: invalid syntax
+>>> for x, y in ((range(2), range(2)):
+  File "<stdin>", line 1
+    for x, y in ((range(2), range(2)):
+                                     ^
+SyntaxError: invalid syntax
+>>> for x, y in (range(2), range(2)):
+...     print(x, "askdgjh", y)
+...
+(0, 'askdgjh', 1)
+(0, 'askdgjh', 1)
+>>> { x, y for x, y in (range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    { x, y for x, y in (range(2), range(3, 5)) }
+             ^
+SyntaxError: invalid syntax
+>>> { x for x, y in (range(2), range(3, 5)) }
+set([0, 3])
+>>> { x y for x, y in (range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    { x y for x, y in (range(2), range(3, 5)) }
+        ^
+SyntaxError: invalid syntax
+>>> { x:y y for x, y in (range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    { x:y y for x, y in (range(2), range(3, 5)) }
+          ^
+SyntaxError: invalid syntax
+>>> { x:y  for x, y in (range(2), range(3, 5)) }
+{0: 1, 3: 4}
+>>> type( { x:y  for x, y in (range(2), range(3, 5)) } )
+<type 'dict'>
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+raj:python nagee$ clear
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> naga = { x:y for x, y in (range(2), range(3, 5)) }
+>>> naga
+{0: 1, 3: 4}
+>>>
+>>>
+>>> class Kanna:
+... pass
+  File "<stdin>", line 2
+    pass
+       ^
+IndentationError: expected an indented block
+>>> class Kanna:
+...   pass
+...
+>>> naga = Kanna
+>>> type(naga)
+<type 'classobj'>
+>>> class Kanna:
+...   pass
+...
+>>> class Kanna:
+...  pass
+... def print_name():
+  File "<stdin>", line 3
+    def print_name():
+      ^
+SyntaxError: invalid syntax
+>>> def kanna():
+...   print("hi this is fucion")
+...
+>>> kanna()
+hi this is fucion
+>>> class Kanna:
+...  def __init__(self, name, agadgakldsjghjkasgd)
+KeyboardInterrupt
+>>>
+>>>
+>>>
+>>> naga
+<class __main__.Kanna at 0x102b3dc18>
+>>>
+>>>
+>>> raj
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raj' is not defined
+>>>
+>>>
+>>>
+>>>   pass
+KeyboardInterrupt
+>>>
+>>>
+>>> naga = { 1:"naga", 2:"raja" }
+>>> type(naga)
+<type 'dict'>
+>>> naga[2]
+'raja'
+>>> naga["raja"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'raja'
+>>>
+>>>
+>>>
+>>> a = range(2)
+>>> a
+[0, 1]
+>>> b = range(3, 5)
+>>> b
+[3, 4]
+>>> a
+[0, 1]
+>>> b
+[3, 4]
+>>> for x, y in (a, b):
+...  print(x, "adjghjdashg", y)
+...
+(0, 'adjghjdashg', 1)
+(3, 'adjghjdashg', 4)
+>>> for x, y in (a, b):
+...  print(x, "======>", y)
+...
+(0, '======>', 1)
+(3, '======>', 4)
+>>>
+>>> naga
+{1: 'naga', 2: 'raja'}
+>>>
+>>>
+>>>
+>>> naga.items()
+[(1, 'naga'), (2, 'raja')]
+>>> for x, y in naga.items():
+...     print(x, "====>", y)
+...
+(1, '====>', 'naga')
+(2, '====>', 'raja')
+>>> naga[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> naga[1]
+'naga'
+>>> naga[2]
+'raja'
+>>> for x, y in naga.items():
+...   if y == "raja":
+...    print(x)
+...
+2
+>>>
+>>>
+>>>
+>>> exit()
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ clear
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ cat /etc/passwd
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
+_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
+_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
+_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
+_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
+_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
+_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
+_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
+_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
+_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
+_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
+_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
+_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
+_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
+_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
+_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
+_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
+_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
+_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
+_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
+_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
+_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
+_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
+_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
+_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
+_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
+_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
+_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
+_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
+_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
+_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false
+_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
+_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
+_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
+_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
+_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
+_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
+_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
+_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
+_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
+_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
+_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
+_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
+_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
+_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
+_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
+_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
+_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
+_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
+_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
+_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
+_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
+_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
+_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
+_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
+_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
+_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
+_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false
+_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false
+_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> naga = [ 0, range(5) ]
+>>> nag
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nag' is not defined
+>>> naga
+[0, [0, 1, 2, 3, 4]]
+>>> line = "launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false"
+>>> line
+'launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false'
+>>> line.split(":")
+['launchservicesd', '*', '239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']
+>>> kanna = line.split(":")
+>>> kanna[0]
+'launchservicesd'
+>>> kanna[2:]
+['239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']
+>>> new_array
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'new_array' is not defined
+>>> new_array = []
+>>> new_array.append(kanna[0])
+>>> new_array
+['launchservicesd']
+>>> new_array.append(kanna[2:])
+>>> new_array
+['launchservicesd', ['239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']]
+>>> raja
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raja' is not defined
+>>> raja = { 'kanna':range(5) }
+>>> raja
+{'kanna': [0, 1, 2, 3, 4]}
+>>> exit()
+raj:python nagee$ aclear
+-bash: aclear: command not found
+raj:python nagee$ clear
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> kanna = { "raja":range(5) }
+>>> kanna
+{'raja': [0, 1, 2, 3, 4]}
+>>> naga
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'naga' is not defined
+>>> raj
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raj' is not defined
+>>> naga = {}
+>>> naga[0] = "naga"
+>>> naga
+{0: 'naga'}
+>>> naga[line[0]] = line[1:]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'line' is not defined
+>>> line
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'line' is not defined
+>>> line = "_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false"
+>>> naga[line[0]] = line[1:]
+>>> naga
+{0: 'naga', '_': 'xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false'}
+>>> exit()
+raj:python nagee$ clear
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> line = "xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false"
+>>> array = line.split(":")
+>>> array
+['xcscredserver', '*', '238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']
+>>> new_dic = {}
+>>> new_dic[array[0]] = array[2:]
+>>> new_dic
+{'xcscredserver': ['238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']}
+>>> kanna = {}
+>>> kanna = { 1:2 }
+>>> kanna
+{1: 2}
+>>> kanna["new_key"] = "new_value"
+>>> kanna
+{1: 2, 'new_key': 'new_value'}
+>>> line
+'xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false'
+>>> array
+['xcscredserver', '*', '238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']
+>>> new_dic = {}
+>>> new_dic[array[0]] = array[2:]
+>>> new_dic
+{'xcscredserver': ['238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']}
+>>> exit()
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ clear
+#!/usr/bin/env python
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ pwd
+/Users/nagee/lesson/python
+raj:python nagee$ ls
+dic.py            find_user_gt_200.py    kanna.py
+find_fs.py        flip_the_coin.py    passwd
+raj:python nagee$ ls -ltr
+total 56
+-rw-r--r--  1 nagee  staff  5253 May 30  2014 passwd
+-rw-r--r--  1 nagee  staff   417 Jun 26 20:28 flip_the_coin.py
+-rw-r--r--  1 nagee  staff   287 Jun 26 20:42 find_fs.py
+-rw-r--r--  1 nagee  staff   287 Jun 30 19:27 kanna.py
+-rw-r--r--  1 nagee  staff   343 Jul  1 15:34 find_user_gt_200.py
+-rw-r--r--  1 nagee  staff   310 Jul  4 14:00 dic.py
+raj:python nagee$ vi iter_dic.py
+raj:python nagee$ python iter_dic.py
+{'_lda': ['211', '211', 'Local Delivery Agent', '/var/empty', '/usr/bin/false'], '_avbdeviced': ['229', '-2', 'Ethernet AVB Device Daemon', '/var/empty', '/usr/bin/false'], '_serialnumberd': ['58', '58', 'Serial Number Daemon', '/var/empty', '/usr/bin/false'], '_dovecot': ['214', '6', 'Dovecot Administrator', '/var/empty', '/usr/bin/false'], '_tokend': ['91', '91', 'Token Daemon', '/var/empty', '/usr/bin/false'], '_geod': ['56', '56', 'Geo Services Daemon', '/var/db/geod', '/usr/bin/false'], '_dovenull': ['227', '227', 'Dovecot Authentication', '/var/empty', '/usr/bin/false'], '_eppc': ['71', '71', 'Apple Events User', '/var/empty', '/usr/bin/false'], '_coreaudiod': ['202', '202', 'Core Audio Daemon', '/var/empty', '/usr/bin/false'], '_atsserver': ['97', '97', 'ATS Server', '/var/empty', '/usr/bin/false'], '_mysql': ['74', '74', 'MySQL Server', '/var/empty', '/usr/bin/false'], '_cvs': ['72', '72', 'CVS Server', '/var/empty', '/usr/bin/false'], '_krb_kadmin': ['231', '-2', 'Open Directory Kerberos Admin Service', '/var/empty', '/usr/bin/false'], '_windowserver': ['88', '88', 'WindowServer', '/var/empty', '/usr/bin/false'], '_netbios': ['222', '222', 'NetBIOS', '/var/empty', '/usr/bin/false'], '_svn': ['73', '73', 'SVN Server', '/var/empty', '/usr/bin/false'], '_krb_kerberos': ['233', '-2', 'Open Directory Kerberos', '/var/empty', '/usr/bin/false'], '_networkd': ['24', '24', 'Network Services', '/var/networkd', '/usr/bin/false'], '_devdocs': ['59', '59', 'Developer Documentation', '/var/empty', '/usr/bin/false'], '_launchservicesd': ['239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false'], '_assetcache': ['235', '235', 'Asset Cache Service', '/var/empty', '/usr/bin/false'], '_www': ['70', '70', 'World Wide Web Server', '/Library/WebServer', '/usr/bin/false'], '_xcscredserver': ['238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false'], '_appleevents': ['55', '55', 'AppleEvents Daemon', '/var/empty', '/usr/bin/false'], '_timezone': ['210', '210', 'AutoTimeZoneDaemon', '/var/empty', '/usr/bin/false'], '_krb_krbtgt': ['230', '-2', 'Open Directory Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false'], '_cvmsroot': ['212', '212', 'CVMS Root', '/var/empty', '/usr/bin/false'], '_trustevaluationagent': ['208', '208', 'Trust Evaluation Agent', '/var/empty', '/usr/bin/false'], '_ard': ['67', '67', 'Apple Remote Desktop', '/var/empty', '/usr/bin/false'], '_unknown': ['99', '99', 'Unknown User', '/var/empty', '/usr/bin/false'], '_webauthserver': ['221', '221', 'Web Auth Server', '/var/empty', '/usr/bin/false'], '_uucp': ['4', '4', 'Unix to Unix Copy Protocol', '/var/spool/uucp', '/usr/sbin/uucico'], '_cyrus': ['77', '6', 'Cyrus Administrator', '/var/imap', '/usr/bin/false'], '_ftp': ['98', '-2', 'FTP Daemon', '/var/empty', '/usr/bin/false'], '_krb_changepw': ['232', '-2', 'Open Directory Kerberos Change Password Service', '/var/empty', '/usr/bin/false'], '_taskgated': ['13', '13', 'Task Gate Daemon', '/var/empty', '/usr/bin/false'], '_securityagent': ['92', '92', 'SecurityAgent', '/var/empty', '/usr/bin/false'], '_installer': ['96', '-2', 'Installer', '/var/empty', '/usr/bin/false'], '_lp': ['26', '26', 'Printing Services', '/var/spool/cups', '/usr/bin/false'], '_warmd': ['224', '224', 'Warm Daemon', '/var/empty', '/usr/bin/false'], 'nobody': ['-2', '-2', 'Unprivileged User', '/var/empty', '/usr/bin/false'], '_devicemgr': ['220', '220', 'Device Management Server', '/var/empty', '/usr/bin/false'], '_mailman': ['78', '78', 'Mailman List Server', '/var/empty', '/usr/bin/false'], '_appserver': ['79', '79', 'Application Server', '/var/empty', '/usr/bin/false'], '_teamsserver': ['94', '94', 'TeamsServer', '/var/teamsserver', '/usr/bin/false'], '_mcxalr': ['54', '54', 'MCX AppLaunch', '/var/empty', '/usr/bin/false'], '_amavisd': ['83', '83', 'AMaViS Daemon', '/var/virusmails', '/usr/bin/false'], '_jabber': ['84', '84', 'Jabber XMPP Server', '/var/empty', '/usr/bin/false'], '_spotlight': ['89', '89', 'Spotlight', '/var/empty', '/usr/bin/false'], '_krbtgt': ['217', '-2', 'Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false'], '_screensaver': ['203', '203', 'Screensaver', '/var/empty', '/usr/bin/false'], '_calendar': ['93', '93', 'Calendar', '/var/empty', '/usr/bin/false'], '_xcsbuildagent': ['237', '237', 'Xcode Server Build Agent', '/var/empty', '/usr/bin/false'], '_postfix': ['27', '27', 'Postfix Mail Server', '/var/spool/postfix', '/usr/bin/false'], '_installassistant': ['25', '25', 'Install Assistant', '/var/empty', '/usr/bin/false'], '_update_sharing': ['95', '-2', 'Update Sharing', '/var/empty', '/usr/bin/false'], '_postgres': ['216', '216', 'PostgreSQL Server', '/var/empty', '/usr/bin/false'], '_sandbox': ['60', '60', 'Seatbelt', '/var/empty', '/usr/bin/false'], '_qtss': ['76', '76', 'QuickTime Streaming Server', '/var/empty', '/usr/bin/false'], 'daemon': ['1', '1', 'System Services', '/var/root', '/usr/bin/false'], '_coremediaiod': ['236', '236', 'Core Media IO Daemon', '/var/empty', '/usr/bin/false'], '_netstatistics': ['228', '228', 'Network Statistics Daemon', '/var/empty', '/usr/bin/false'], '_sshd': ['75', '75', 'sshd Privilege separation', '/var/empty', '/usr/bin/false'], '_softwareupdate': ['200', '200', 'Software Update Service', '/var/empty', '/usr/bin/false'], '_kadmin_changepw': ['219', '-2', 'Kerberos Change Password Service', '/var/empty', '/usr/bin/false'], '_krb_anonymous': ['234', '-2', 'Open Directory Kerberos Anonymous', '/var/empty', '/usr/bin/false'], '_kadmin_admin': ['218', '-2', 'Kerberos Admin Service', '/var/empty', '/usr/bin/false'], '_locationd': ['205', '205', 'Location Daemon', '/var/db/locationd', '/usr/bin/false'], '_appowner': ['87', '87', 'Application Owner', '/var/empty', '/usr/bin/false'], '_usbmuxd': ['213', '213', 'iPhone OS Device Helper', '/var/db/lockdown', '/usr/bin/false'], '_clamav': ['82', '82', 'ClamAV Daemon', '/var/virusmails', '/usr/bin/false'], '_scsd': ['31', '31', 'Service Configuration Service', '/var/empty', '/usr/bin/false'], '_dpaudio': ['215', '215', 'DP Audio', '/var/empty', '/usr/bin/false'], 'root': ['0', '0', 'System Administrator', '/var/root', '/bin/sh'], '_ces': ['32', '32', 'Certificate Enrollment Service', '/var/empty', '/usr/bin/false'], '_mdnsresponder': ['65', '65', 'mDNSResponder', '/var/empty', '/usr/bin/false']}
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ vi iter_dic.py
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+#!/usr/bin/env python
+>>>
+>>>
+>>> naga = range(5)
+>>> naga
+[0, 1, 2, 3, 4]
+>>> naga[6] = "naga"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+raj:python nagee$ vi /etc/passwd
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ vi iter_dic.py
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> naga = []
+>>> naga.append(5, range(5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: append() takes exactly one argument (2 given)
+>>> naga.append((5, range(5)))
+>>> naga
+[(5, [0, 1, 2, 3, 4])]
+>>> exit()
+raj:python nagee$ vi iter_dic.py
+raj:python nagee$ python iter_dic.py
+[('nobody', ['-2', '-2', 'Unprivileged User', '/var/empty', '/usr/bin/false']), ('root', ['0', '0', 'System Administrator', '/var/root', '/bin/sh']), ('daemon', ['1', '1', 'System Services', '/var/root', '/usr/bin/false']), ('_uucp', ['4', '4', 'Unix to Unix Copy Protocol', '/var/spool/uucp', '/usr/sbin/uucico']), ('_taskgated', ['13', '13', 'Task Gate Daemon', '/var/empty', '/usr/bin/false']), ('_networkd', ['24', '24', 'Network Services', '/var/networkd', '/usr/bin/false']), ('_installassistant', ['25', '25', 'Install Assistant', '/var/empty', '/usr/bin/false']), ('_lp', ['26', '26', 'Printing Services', '/var/spool/cups', '/usr/bin/false']), ('_postfix', ['27', '27', 'Postfix Mail Server', '/var/spool/postfix', '/usr/bin/false']), ('_scsd', ['31', '31', 'Service Configuration Service', '/var/empty', '/usr/bin/false']), ('_ces', ['32', '32', 'Certificate Enrollment Service', '/var/empty', '/usr/bin/false']), ('_mcxalr', ['54', '54', 'MCX AppLaunch', '/var/empty', '/usr/bin/false']), ('_appleevents', ['55', '55', 'AppleEvents Daemon', '/var/empty', '/usr/bin/false']), ('_geod', ['56', '56', 'Geo Services Daemon', '/var/db/geod', '/usr/bin/false']), ('_serialnumberd', ['58', '58', 'Serial Number Daemon', '/var/empty', '/usr/bin/false']), ('_devdocs', ['59', '59', 'Developer Documentation', '/var/empty', '/usr/bin/false']), ('_sandbox', ['60', '60', 'Seatbelt', '/var/empty', '/usr/bin/false']), ('_mdnsresponder', ['65', '65', 'mDNSResponder', '/var/empty', '/usr/bin/false']), ('_ard', ['67', '67', 'Apple Remote Desktop', '/var/empty', '/usr/bin/false']), ('_www', ['70', '70', 'World Wide Web Server', '/Library/WebServer', '/usr/bin/false']), ('_eppc', ['71', '71', 'Apple Events User', '/var/empty', '/usr/bin/false']), ('_cvs', ['72', '72', 'CVS Server', '/var/empty', '/usr/bin/false']), ('_svn', ['73', '73', 'SVN Server', '/var/empty', '/usr/bin/false']), ('_mysql', ['74', '74', 'MySQL Server', '/var/empty', '/usr/bin/false']), ('_sshd', ['75', '75', 'sshd Privilege separation', '/var/empty', '/usr/bin/false']), ('_qtss', ['76', '76', 'QuickTime Streaming Server', '/var/empty', '/usr/bin/false']), ('_cyrus', ['77', '6', 'Cyrus Administrator', '/var/imap', '/usr/bin/false']), ('_mailman', ['78', '78', 'Mailman List Server', '/var/empty', '/usr/bin/false']), ('_appserver', ['79', '79', 'Application Server', '/var/empty', '/usr/bin/false']), ('_clamav', ['82', '82', 'ClamAV Daemon', '/var/virusmails', '/usr/bin/false']), ('_amavisd', ['83', '83', 'AMaViS Daemon', '/var/virusmails', '/usr/bin/false']), ('_jabber', ['84', '84', 'Jabber XMPP Server', '/var/empty', '/usr/bin/false']), ('_appowner', ['87', '87', 'Application Owner', '/var/empty', '/usr/bin/false']), ('_windowserver', ['88', '88', 'WindowServer', '/var/empty', '/usr/bin/false']), ('_spot#!/usr/bin/env python
+light', ['89', '89', 'Spotlight', '/var/empty', '/usr/bin/false']), ('_tokend', ['91', '91', 'Token Daemon', '/var/empty', '/usr/bin/false']), ('_securityagent', ['92', '92', 'SecurityAgent', '/var/empty', '/usr/bin/false']), ('_calendar', ['93', '93', 'Calendar', '/var/empty', '/usr/bin/false']), ('_teamsserver', ['94', '94', 'TeamsServer', '/var/teamsserver', '/usr/bin/false']), ('_update_sharing', ['95', '-2', 'Update Sharing', '/var/empty', '/usr/bin/false']), ('_installer', ['96', '-2', 'Installer', '/var/empty', '/usr/bin/false']), ('_atsserver', ['97', '97', 'ATS Server', '/var/empty', '/usr/bin/false']), ('_ftp', ['98', '-2', 'FTP Daemon', '/var/empty', '/usr/bin/false']), ('_unknown', ['99', '99', 'Unknown User', '/var/empty', '/usr/bin/false']), ('_softwareupdate', ['200', '200', 'Software Update Service', '/var/empty', '/usr/bin/false']), ('_coreaudiod', ['202', '202', 'Core Audio Daemon', '/var/empty', '/usr/bin/false']), ('_screensaver', ['203', '203', 'Screensaver', '/var/empty', '/usr/bin/false']), ('_locationd', ['205', '205', 'Location Daemon', '/var/db/locationd', '/usr/bin/false']), ('_trustevaluationagent', ['208', '208', 'Trust Evaluation Agent', '/var/empty', '/usr/bin/false']), ('_timezone', ['210', '210', 'AutoTimeZoneDaemon', '/var/empty', '/usr/bin/false']), ('_lda', ['211', '211', 'Local Delivery Agent', '/var/empty', '/usr/bin/false']), ('_cvmsroot', ['212', '212', 'CVMS Root', '/var/empty', '/usr/bin/false']), ('_usbmuxd', ['213', '213', 'iPhone OS Device Helper', '/var/db/lockdown', '/usr/bin/false']), ('_dovecot', ['214', '6', 'Dovecot Administrator', '/var/empty', '/usr/bin/false']), ('_dpaudio', ['215', '215', 'DP Audio', '/var/empty', '/usr/bin/false']), ('_postgres', ['216', '216', 'PostgreSQL Server', '/var/empty', '/usr/bin/false']), ('_krbtgt', ['217', '-2', 'Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false']), ('_kadmin_admin', ['218', '-2', 'Kerberos Admin Service', '/var/empty', '/usr/bin/false']), ('_kadmin_changepw', ['219', '-2', 'Kerberos Change Password Service', '/var/empty', '/usr/bin/false']), ('_devicemgr', ['220', '220', 'Device Management Server', '/var/empty', '/usr/bin/false']), ('_webauthserver', ['221', '221', 'Web Auth Server', '/var/empty', '/usr/bin/false']), ('_netbios', ['222', '222', 'NetBIOS', '/var/empty', '/usr/bin/false']), ('_warmd', ['224', '224', 'Warm Daemon', '/var/empty', '/usr/bin/false']), ('_dovenull', ['227', '227', 'Dovecot Authentication', '/var/empty', '/usr/bin/false']), ('_netstatistics', ['228', '228', 'Network Statistics Daemon', '/var/empty', '/usr/bin/false']), ('_avbdeviced', ['229', '-2', 'Ethernet AVB Device Daemon', '/var/empty', '/usr/bin/false']), ('_krb_krbtgt', ['230', '-2', 'Open Directory Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false']), ('_krb_kadmin', ['231', '-2', 'Open Directory Kerberos Admin Service', '/var/empty', '/usr/bin/false']), ('_krb_changepw', ['232', '-2', 'Open Directory Kerberos Change Password Service', '/var/empty', '/usr/bin/false']), ('_krb_kerberos', ['233', '-2', 'Open Directory Kerberos', '/var/empty', '/usr/bin/false']), ('_krb_anonymous', ['234', '-2', 'Open Directory Kerberos Anonymous', '/var/empty', '/usr/bin/false']), ('_assetcache', ['235', '235', 'Asset Cache Service', '/var/empty', '/usr/bin/false']), ('_coremediaiod', ['236', '236', 'Core Media IO Daemon', '/var/empty', '/usr/bin/false']), ('_xcsbuildagent', ['237', '237', 'Xcode Server Build Agent', '/var/empty', '/usr/bin/false']), ('_xcscredserver', ['238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']), ('_launchservicesd', ['239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false'])]
+raj:python nagee$ vi iter_dic.py
+raj:python nagee$ python iter_dic.py
+[['nobody', ['-2', '-2', 'Unprivileged User', '/var/empty', '/usr/bin/false']], ['root', ['0', '0', 'System Administrator', '/var/root', '/bin/sh']], ['daemon', ['1', '1', 'System Services', '/var/root', '/usr/bin/false']], ['_uucp', ['4', '4', 'Unix to Unix Copy Protocol', '/var/spool/uucp', '/usr/sbin/uucico']], ['_taskgated', ['13', '13', 'Task Gate Daemon', '/var/empty', '/usr/bin/false']], ['_networkd', ['24', '24', 'Network Services', '/var/networkd', '/usr/bin/false']], ['_installassistant', ['25', '25', 'Install Assistant', '/var/empty', '/usr/bin/false']], ['_lp', ['26', '26', 'Printing Services', '/var/spool/cups', '/usr/bin/false']], ['_postfix', ['27', '27', 'Postfix Mail Server', '/var/spool/postfix', '/usr/bin/false']], ['_scsd', ['31', '31', 'Service Configuration Service', '/var/empty', '/usr/bin/false']], ['_ces', ['32', '32', 'Certificate Enrollment Service', '/var/empty', '/usr/bin/false']], ['_mcxalr', ['54', '54', 'MCX AppLaunch', '/var/empty', '/usr/bin/false']], ['_appleevents', ['55', '55', 'AppleEvents Daemon', '/var/empty', '/usr/bin/false']], ['_geod', ['56', '56', 'Geo Services Daemon', '/var/db/geod', '/usr/bin/false']], ['_serialnumberd', ['58', '58', 'Serial Number Daemon', '/var/empty', '/usr/bin/false']], ['_devdocs', ['59', '59', 'Developer Documentation', '/var/empty', '/usr/bin/false']], ['_sandbox', ['60', '60', 'Seatbelt', '/var/empty', '/usr/bin/false']], ['_mdnsresponder', ['65', '65', 'mDNSResponder', '/var/empty', '/usr/bin/false']], ['_ard', ['67', '67', 'Apple Remote Desktop', '/var/empty', '/usr/bin/false']], ['_www', ['70', '70', 'World Wide Web Server', '/Library/WebServer', '/usr/bin/false']], ['_eppc', ['71', '71', 'Apple Events User', '/var/empty', '/usr/bin/false']], ['_cvs', ['72', '72', 'CVS Server', '/var/empty', '/usr/bin/false']], ['_svn', ['73', '73', 'SVN Server', '/var/empty', '/usr/bin/false']], ['_mysql', ['74', '74', 'MySQL Server', '/var/empty', '/usr/bin/false']], ['_sshd', ['75', '75', 'sshd Privilege separation', '/var/empty', '/usr/bin/false']], ['_qtss', ['76', '76', 'QuickTime Streaming Server', '/var/empty', '/usr/bin/false']], ['_cyrus', ['77', '6', 'Cyrus Administrator', '/var/imap', '/usr/bin/false']], ['_mailman', ['78', '78', 'Mailman List Server', '/var/empty', '/usr/bin/false']], ['_appserver', ['79', '79', 'Application Server', '/var/empty', '/usr/bin/false']], ['_clamav', ['82', '82', 'ClamAV Daemon', '/var/virusmails', '/usr/bin/false']], ['_amavisd', ['83', '83', 'AMaViS Daemon', '/var/virusmails', '/usr/bin/false']], ['_jabber', ['84', '84', 'Jabber XMPP Server', '/var/empty', '/usr/bin/false']], ['_appowner', ['87', '87', 'Application Owner', '/var/empty', '/usr/bin/false']], ['_windowserver', ['88', '88', 'WindowServer', '/var/empty', '/usr/bin/false']], ['_spotlight', ['89', '89', 'Spotlight', '/var/empty', '/usr/bin/false']], ['_tokend', ['91', '91', 'Token Daemon', '/var/empty', '/usr/bin/false']], ['_securityagent', ['92', '92', 'SecurityAgent', '/var/empty', '/usr/bin/false']], ['_calendar', ['93', '93', 'Calendar', '/var/empty', '/usr/bin/false']], ['_teamsserver', ['94', '94', 'TeamsServer', '/var/teamsserver', '/usr/bin/false']], ['_update_sharing', ['95', '-2', 'Update Sharing', '/var/empty', '/usr/bin/false']], ['_installer', ['96', '-2', 'Installer', '/var/empty', '/usr/bin/false']], ['_atsserver', ['97', '97', 'ATS Server', '/var/empty', '/usr/bin/false']], ['_ftp', ['98', '-2', 'FTP Daemon', '/var/empty', '/usr/bin/false']], ['_unknown', ['99', '99', 'Unknown User', '/var/empty', '/usr/bin/false']], ['_softwareupdate', ['200', '200', 'Software Update Service', '/var/empty', '/usr/bin/false']], ['_coreaudiod', ['202', '202', 'Core Audio Daemon', '/var/empty', '/usr/bin/false']], ['_screensaver', ['203', '203', 'Screensaver', '/var/empty', '/usr/bin/false']], ['_locationd', ['205', '205', 'Location Daemon', '/var/db/locationd', '/usr/bin/false']], ['_trustevaluationagent', ['208', '208', 'Trust Evaluation Agent', '/var/empty', '/usr/bin/false']], ['_timezone', ['210', '210', 'AutoTimeZoneDaemon', '/var/empty', '/usr/bin/false']], ['_lda', ['211', '211', 'Local Delivery Agent', '/var/empty', '/usr/bin/false']], ['_cvmsroot', ['212', '212', 'CVMS Root', '/var/empty', '/usr/bin/false']], ['_usbmuxd', ['213', '213', 'iPhone OS Device Helper', '/var/db/lockdown', '/usr/bin/false']], ['_dovecot', ['214', '6', 'Dovecot Administrator', '/var/empty', '/usr/bin/false']], ['_dpaudio', ['215', '215', 'DP Audio', '/var/empty', '/usr/bin/false']], ['_postgres', ['216', '216', 'PostgreSQL Server', '/var/empty', '/usr/bin/false']], ['_krbtgt', ['217', '-2', 'Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false']], ['_kadmin_admin', ['218', '-2', 'Kerberos Admin Service', '/var/empty', '/usr/bin/false']], ['_kadmin_changepw', ['219', '-2', 'Kerberos Change Password Service', '/var/empty', '/usr/bin/false']], ['_devicemgr', ['220', '220', 'Device Management Server', '/var/empty', '/usr/bin/false']], ['_webauthserver', ['221', '221', 'Web Auth Server', '/var/empty', '/usr/bin/false']], ['_netbios', ['222', '222', 'NetBIOS', '/var/empty', '/usr/bin/false']], ['_warmd', ['224', '224', 'Warm Daemon', '/var/empty', '/usr/bin/false']], ['_dovenull', ['227', '227', 'Dovecot Authentication', '/var/empty', '/usr/bin/false']], ['_netstatistics', ['228', '228', 'Network Statistics Daemon', '/var/empty', '/usr/bin/false']], ['_avbdeviced', ['229', '-2', 'Ethernet AVB Device Daemon', '/var/empty', '/usr/bin/false']], ['_krb_krbtgt', ['230', '-2', 'Open Directory Kerberos Ticket Granting Ticket', '/var/empty', '/usr/bin/false']], ['_krb_kadmin', ['231', '-2', 'Open Directory Kerberos Admin Service', '/var/empty', '/usr/bin/false']], ['_krb_changepw', ['232', '-2', 'Open Directory Kerberos Change Password Service', '/var/empty', '/usr/bin/false']], ['_krb_kerberos', ['233', '-2', 'Open Directory Kerberos', '/var/empty', '/usr/bin/false']], ['_krb_anonymous', ['234', '-2', 'Open Directory Kerberos Anonymous', '/var/empty', '/usr/bin/false']], ['_assetcache', ['235', '235', 'Asset Cache Service', '/var/empty', '/usr/bin/false']], ['_coremediaiod', ['236', '236', 'Core Media IO Daemon', '/var/empty', '/usr/bin/false']], ['_xcsbuildagent', ['237', '237', 'Xcode Server Build Agent', '/var/empty', '/usr/bin/false']], ['_xcscredserver', ['238', '238', 'Xcode Server Credential Server', '/var/empty', '/usr/bin/false']], ['_launchservicesd', ['239', '239', '_launchservicesd', '/var/empty', '/usr/bin/false']]]
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ clear
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>>
+>>>
+>>> new_dict = { x:y for x, y in (range(2), range(10, 12)) }
+>>> new_dict
+{0: 1, 10: 11}
+>>> dir(new_dict)
+['__class__', '__cmp__', '__contains__', '__delattr__', '__delitem__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'has_key', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues']
+>>> for x in 10
+  File "<stdin>", line 1
+    for x in 10
+              ^
+SyntaxError: invalid syntax
+>>> for x in 10:
+... print(x)
+  File "<stdin>", line 2
+    print(x)
+        ^
+IndentationError: expected an indented block
+>>>
+>>> for x in 10:
+...  print(x)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> new_dict
+{0: 1, 10: 11}
+>>>
+>>>
+>>> reverse_dict = {}
+>>> new_list.items()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'new_list' is not defined
+>>> new_dict.items()
+[(0, 1), (10, 11)]
+>>> for x, y in new_dict.items():
+...  reverse_dict[y] = x
+...
+>>> reverse_dict
+{1: 0, 11: 10}
+>>>
+>>>
+>>>
+>>> naga = { x, y for x, y in ((range(2), range(3, 5))
+  File "<stdin>", line 1
+    naga = { x, y for x, y in ((range(2), range(3, 5))
+                    ^
+SyntaxError: invalid syntax
+>>> naga = { x, y for x, y in ((range(2), range(3, 5))
+KeyboardInterrupt
+>>>
+>>>
+>>> naga
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'naga' is not defined
+>>> naga = { x, y for x, y in ((range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    naga = { x, y for x, y in ((range(2), range(3, 5)) }
+                    ^
+SyntaxError: invalid syntax
+>>> naga = { x:y for x, y in ((range(2), range(3, 5)) }
+  File "<stdin>", line 1
+    naga = { x:y for x, y in ((range(2), range(3, 5)) }
+                                                      ^
+SyntaxError: invalid syntax
+>>> naga = { x:y for x, y in (range(2), range(3, 5)) }
+>>> naga
+{0: 1, 3: 4}
+>>> naga[5] = range(10)
+>>> naga
+{0: 1, 3: 4, 5: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+>>> raj = { "naga": "raj" }
+>>> naga[6] = rajç
+KeyboardInterrupt
+>>> raj
+{'naga': 'raj'}
+>>> naga
+{0: 1, 3: 4, 5: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+>>> naga["kanna"] = raj
+>>> naga
+{0: 1, 'kanna': {'naga': 'raj'}, 3: 4, 5: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+>>> naga["kanna"]
+{'naga': 'raj'}
+>>> naga["kanna"]["naga"]
+'raj'
+>>> exit()
+raj:python nagee$

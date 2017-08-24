@@ -1,0 +1,817 @@
+>>> line = "_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false"
+>>> list_a = line.split(":")
+>>> dic[list_a[0]] = { list_a[2]: list_a[-1]}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dic' is not defined
+>>> dic[list_a[0]] = { list_a[2]: list_a[-1]}
+KeyboardInterrupt
+>>> dic = {}
+>>> dic[list_a[0]] = { list_a[2]: list_a[-1]}
+>>> dic
+{'_launchservicesd': {'239': '/usr/bin/false'}}
+>>> for key, valye in dic.items():
+...  print(key, value)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'value' is not defined
+>>> for key, value in dic.items():
+...  print(key, value)
+...
+('_launchservicesd', {'239': '/usr/bin/false'})
+>>> for key, value in dic.items():
+...   for key1, value1 in value.items():
+...     print(key1, value1)
+...
+('239', '/usr/bin/false')
+>>> if key1 > 90 and valye1 == "/bin/bash"
+  File "<stdin>", line 1
+    if key1 > 90 and valye1 == "/bin/bash"
+                                         ^
+SyntaxError: invalid syntax
+>>> for key, value in dic.items():
+...  if type(value) is dict:
+...
+  File "<stdin>", line 2
+    if type(value) is dict:
+                          ^
+IndentationError: expected an indented block
+>>>
+>>>
+>>> import os
+>>> dir(os)
+['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_EXLOCK', 'O_NDELAY', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 'O_RDONLY', 'O_RDWR', 'O_SHLOCK', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'TMP_MAX', 'UserDict', 'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '_copy_reg', '_execvpe', '_exists', '_exit', '_get_exports_list', '_make_stat_result', '_make_statvfs_result', '_pickle_stat_result', '_pickle_statvfs_result', '_spawnvef', 'abort', 'access', 'altsep', 'chdir', 'chflags', 'chmod', 'chown', 'chroot', 'close', 'closerange', 'confstr', 'confstr_names', 'ctermid', 'curdir', 'defpath', 'devnull', 'dup', 'dup2', 'environ', 'errno', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fchdir', 'fchmod', 'fchown', 'fdopen', 'fork', 'forkpty', 'fpathconf', 'fstat', 'fstatvfs', 'fsync', 'ftruncate', 'getcwd', 'getcwdu', 'getegid', 'getenv', 'geteuid', 'getgid', 'getgroups', 'getloadavg', 'getlogin', 'getpgid', 'getpgrp', 'getpid', 'getppid', 'getsid', 'getuid', 'initgroups', 'isatty', 'kill', 'killpg', 'lchflags', 'lchmod', 'lchown', 'linesep', 'link', 'listdir', 'lseek', 'lstat', 'major', 'makedev', 'makedirs', 'minor', 'mkdir', 'mkfifo', 'mknod', 'name', 'nice', 'open', 'openpty', 'pardir', 'path', 'pathconf', 'pathconf_names', 'pathsep', 'pipe', 'popen', 'popen2', 'popen3', 'popen4', 'putenv', 'read', 'readlink', 'remove', 'removedirs', 'rename', 'renames', 'rmdir', 'sep', 'setegid', 'seteuid', 'setgid', 'setgroups', 'setpgid', 'setpgrp', 'setregid', 'setreuid', 'setsid', 'setuid', 'spawnl', 'spawnle', 'spawnlp', 'spawnlpe', 'spawnv', 'spawnve', 'spawnvp', 'spawnvpe', 'stat', 'stat_float_times', 'stat_result', 'statvfs', 'statvfs_result', 'strerror', 'symlink', 'sys', 'sysconf', 'sysconf_names', 'system', 'tcgetpgrp', 'tcsetpgrp', 'tempnam', 'times', 'tmpfile', 'tmpnam', 'ttyname', 'umask', 'uname', 'unlink', 'unsetenv', 'urandom', 'utime', 'wait', 'wait3', 'wait4', 'waitpid', 'walk', 'write']
+>>>
+>>>
+>>>
+>>>
+>>> file_handle = open('/etc/passwd')
+>>> file_handle = open('/etc/passwd', "w")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IOError: [Errno 13] Permission denied: '/etc/passwd'
+>>> exit()
+raj:python nagee$ id
+uid=501(nagee) gid=20(staff) groups=20(staff),402(com.apple.sharepoint.group.1),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(com.apple.sharepoint.group.2),33(_appstore),100(_lpoperator),204(_developer),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh-disabled)
+raj:python nagee$ cp -p /etc/passwd /tmp
+raj:python nagee$ chmod 777 /tmp/passwd
+raj:python nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> file_handle = open('/etc/passwd', 'w')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IOError: [Errno 13] Permission denied: '/etc/passwd'
+>>> file_handle = open('/tmp/passwd', 'w')
+>>> file_handle = open('/tmp/passwd')
+>>> file_handle = open('/tmp/passwd', 'r')
+>>> dir(file_handle)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> file_handle.readline()
+''
+>>> file_handle.readline()
+''
+>>> file_handle.readline()
+''
+>>> file_handle.readline()
+''
+>>> file_handle.readline()
+''
+>>>
+KeyboardInterrupt
+>>> file_handle.readlines()
+[]
+>>> file_handle = open('/tmp/passwd', 'r')
+KeyboardInterrupt
+>>> exit()
+raj:python nagee$ cat /tmp/passwd
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$
+raj:python nagee$ cd /tmp
+raj:tmp nagee$ ls
+com.apple.launchd.2c3svmivyp    com.apple.launchd.nSWopq8sXk    passwd
+raj:tmp nagee$ cp /etc/passwd .
+raj:tmp nagee$ cat passwd
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
+_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
+_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
+_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
+_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
+_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
+_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
+_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
+_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
+_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
+_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
+_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
+_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
+_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
+_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
+_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
+_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
+_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
+_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
+_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
+_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
+_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
+_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
+_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
+_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
+_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
+_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
+_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
+_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
+_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
+_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false
+_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
+_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
+_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
+_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
+_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
+_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
+_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
+_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
+_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
+_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
+_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
+_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
+_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
+_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
+_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
+_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
+_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
+_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
+_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
+_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
+_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
+_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
+_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
+_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
+_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
+_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
+_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false
+_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false
+_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
+raj:tmp nagee$ chmod 777 passwd
+raj:tmp nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>>
+>>> kanna = open('/tmp/passwd')
+>>>
+>>> kanna.readline()
+'##\n'
+>>> kanna.readline()
+'# User Database\n'
+>>> kanna.readline()
+'# \n'
+>>> kanna.readline()
+'# Note that this file is consulted directly only when the system is running\n'
+>>> kanna.readline()
+'# in single-user mode.  At other times this information is provided by\n'
+>>> kanna.readline()
+'# Open Directory.\n'
+>>> kanna.readline()
+'#\n'
+>>> kanna.readline()
+'# See the opendirectoryd(8) man page for additional information about\n'
+>>> kanna.readline()
+'# Open Directory.\n'
+>>> kanna.readline()
+'##\n'
+>>> kanna.readlines()
+['nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n', 'root:*:0:0:System Administrator:/var/root:/bin/sh\n', 'daemon:*:1:1:System Services:/var/root:/usr/bin/false\n', '_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico\n', '_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false\n', '_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false\n', '_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false\n', '_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false\n', '_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false\n', '_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false\n', '_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false\n', '_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false\n', '_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false\n', '_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false\n', '_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false\n', '_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false\n', '_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false\n', '_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false\n', '_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false\n', '_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false\n', '_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false\n', '_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false\n', '_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false\n', '_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false\n', '_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false\n', '_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false\n', '_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false\n', '_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false\n', '_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false\n', '_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false\n', '_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false\n', '_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false\n', '_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false\n', '_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false\n', '_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false\n', '_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false\n', '_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false\n', '_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false\n', '_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false\n', '_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false\n', '_installer:*:96:-2:Installer:/var/empty:/usr/bin/false\n', '_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false\n', '_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false\n', '_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false\n', '_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false\n', '_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false\n', '_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false\n', '_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false\n', '_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false\n', '_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false\n', '_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false\n', '_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false\n', '_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false\n', '_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false\n', '_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false\n', '_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false\n', '_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false\n', '_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false\n', '_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false\n', '_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false\n', '_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false\n', '_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false\n', '_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false\n', '_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false\n', '_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false\n', '_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false\n', '_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false\n', '_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false\n', '_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false\n', '_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false\n']
+>>> kanna.readlines()
+[]
+>>> kanna.readlines()
+[]
+>>> kanna.readlines()
+[]
+>>> kanna.readlines()
+[]
+>>> kanna.readlines()
+[]
+>>> kanna.close()
+>>> kanna
+<closed file '/tmp/passwd', mode 'r' at 0x105f33f60>
+>>> kanna = open('/etc/passwd')
+>>>
+>>> for read_lineby_line in kanna.readlines():
+...  print(read_lineby_line)
+...
+##
+
+# User Database
+
+#
+
+# Note that this file is consulted directly only when the system is running
+
+# in single-user mode.  At other times this information is provided by
+
+# Open Directory.
+
+#
+
+# See the opendirectoryd(8) man page for additional information about
+
+# Open Directory.
+
+##
+
+nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+
+root:*:0:0:System Administrator:/var/root:/bin/sh
+
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+
+_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
+
+_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
+
+_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
+
+_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
+
+_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
+
+_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
+
+_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
+
+_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
+
+_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
+
+_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
+
+_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
+
+_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
+
+_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
+
+_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
+
+_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
+
+_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
+
+_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
+
+_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
+
+_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
+
+_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
+
+_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
+
+_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
+
+_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
+
+_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
+
+_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
+
+_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
+
+_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
+
+_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
+
+_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
+
+_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
+
+_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false
+
+_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
+
+_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
+
+_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
+
+_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
+
+_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
+
+_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
+
+_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
+
+_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
+
+_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
+
+_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
+
+_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
+
+_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
+
+_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
+
+_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
+
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+
+_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
+
+_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+
+_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
+
+_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
+
+_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
+
+_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
+
+_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
+
+_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
+
+_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
+
+_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+
+_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
+
+_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
+
+_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
+
+_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
+
+_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
+
+_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false
+
+_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false
+
+_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
+
+>>> for read_lineby_line in kanna.readlines():
+...  print(read_lineby_line, end="")
+  File "<stdin>", line 2
+    print(read_lineby_line, end="")
+                               ^
+SyntaxError: invalid syntax
+>>> from __future__ import print_function
+>>> for read_lineby_line in kanna.readlines():
+...  print(read_lineby_line, end="")
+...
+>>> kanna = open('/etc/passwd')
+>>> for read_lineby_line in kanna.readlines():
+...  print(read_lineby_line, end="")
+...
+##
+# User Database
+#
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+# Open Directory.
+#
+# See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+##
+nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
+_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
+_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
+_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
+_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
+_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
+_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
+_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
+_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
+_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
+_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
+_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
+_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
+_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
+_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
+_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
+_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
+_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
+_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
+_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
+_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
+_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
+_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
+_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
+_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
+_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
+_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
+_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
+_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
+_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
+_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false
+_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
+_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
+_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
+_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
+_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
+_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
+_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
+_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
+_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
+_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
+_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
+_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
+_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
+_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
+_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
+_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
+_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
+_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
+_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
+_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
+_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
+_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
+_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
+_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
+_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
+_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
+_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
+_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
+_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
+_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
+_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false
+_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false
+_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
+>>> for read_lineby_line in kanna.readlines():
+KeyboardInterrupt
+>>> kanna_to_write = open('/tmp/passwd1', 'w')
+>>> dir(kanna_to_write)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> kanna_to_write.write("akghakjghjahgja")
+>>> kanna_to_write.close()
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+raj:tmp nagee$ cat /tmp/passwd1
+akghakjghjahgjaraj:tmp nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>>
+>>>
+>>> with open('/etc/passwd') as naga:
+...  naga.readlines()
+...
+['##\n', '# User Database\n', '# \n', '# Note that this file is consulted directly only when the system is running\n', '# in single-user mode.  At other times this information is provided by\n', '# Open Directory.\n', '#\n', '# See the opendirectoryd(8) man page for additional information about\n', '# Open Directory.\n', '##\n', 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n', 'root:*:0:0:System Administrator:/var/root:/bin/sh\n', 'daemon:*:1:1:System Services:/var/root:/usr/bin/false\n', '_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico\n', '_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false\n', '_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false\n', '_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false\n', '_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false\n', '_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false\n', '_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false\n', '_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false\n', '_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false\n', '_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false\n', '_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false\n', '_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false\n', '_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false\n', '_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false\n', '_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false\n', '_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false\n', '_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false\n', '_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false\n', '_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false\n', '_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false\n', '_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false\n', '_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false\n', '_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false\n', '_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false\n', '_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false\n', '_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false\n', '_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false\n', '_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false\n', '_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false\n', '_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false\n', '_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false\n', '_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false\n', '_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false\n', '_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false\n', '_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false\n', '_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false\n', '_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false\n', '_installer:*:96:-2:Installer:/var/empty:/usr/bin/false\n', '_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false\n', '_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false\n', '_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false\n', '_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false\n', '_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false\n', '_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false\n', '_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false\n', '_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false\n', '_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false\n', '_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false\n', '_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false\n', '_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false\n', '_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false\n', '_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false\n', '_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false\n', '_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false\n', '_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false\n', '_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false\n', '_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false\n', '_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false\n', '_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false\n', '_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false\n', '_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false\n', '_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false\n', '_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false\n', '_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false\n', '_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false\n', '_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false\n', '_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false\n']
+>>> dir(naga)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> naga.close()
+>>> naga
+<closed file '/etc/passwd', mode 'r' at 0x10b36bf60>
+>>> with open('/etc/passwd') as naga:
+...  naga.readlines()
+...
+['##\n', '# User Database\n', '# \n', '# Note that this file is consulted directly only when the system is running\n', '# in single-user mode.  At other times this information is provided by\n', '# Open Directory.\n', '#\n', '# See the opendirectoryd(8) man page for additional information about\n', '# Open Directory.\n', '##\n', 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n', 'root:*:0:0:System Administrator:/var/root:/bin/sh\n', 'daemon:*:1:1:System Services:/var/root:/usr/bin/false\n', '_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico\n', '_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false\n', '_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false\n', '_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false\n', '_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false\n', '_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false\n', '_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false\n', '_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false\n', '_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false\n', '_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false\n', '_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false\n', '_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false\n', '_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false\n', '_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false\n', '_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false\n', '_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false\n', '_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false\n', '_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false\n', '_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false\n', '_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false\n', '_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false\n', '_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false\n', '_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false\n', '_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false\n', '_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false\n', '_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false\n', '_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false\n', '_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false\n', '_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false\n', '_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false\n', '_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false\n', '_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false\n', '_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false\n', '_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false\n', '_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false\n', '_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false\n', '_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false\n', '_installer:*:96:-2:Installer:/var/empty:/usr/bin/false\n', '_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false\n', '_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false\n', '_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false\n', '_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false\n', '_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false\n', '_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false\n', '_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false\n', '_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false\n', '_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false\n', '_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false\n', '_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false\n', '_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false\n', '_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false\n', '_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false\n', '_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false\n', '_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false\n', '_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false\n', '_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false\n', '_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false\n', '_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false\n', '_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false\n', '_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false\n', '_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false\n', '_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false\n', '_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false\n', '_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false\n', '_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false\n', '_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false\n', '_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false\n']
+>>> naga
+<closed file '/etc/passwd', mode 'r' at 0x10b3c7030>
+>>> with open('/etc/passwd') as kanna:
+...  kanna.readlines()
+...
+['##\n', '# User Database\n', '# \n', '# Note that this file is consulted directly only when the system is running\n', '# in single-user mode.  At other times this information is provided by\n', '# Open Directory.\n', '#\n', '# See the opendirectoryd(8) man page for additional information about\n', '# Open Directory.\n', '##\n', 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n', 'root:*:0:0:System Administrator:/var/root:/bin/sh\n', 'daemon:*:1:1:System Services:/var/root:/usr/bin/false\n', '_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico\n', '_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false\n', '_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false\n', '_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false\n', '_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false\n', '_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false\n', '_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false\n', '_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false\n', '_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false\n', '_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false\n', '_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false\n', '_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false\n', '_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false\n', '_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false\n', '_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false\n', '_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false\n', '_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false\n', '_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false\n', '_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false\n', '_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false\n', '_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false\n', '_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false\n', '_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false\n', '_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false\n', '_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false\n', '_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false\n', '_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false\n', '_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false\n', '_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false\n', '_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false\n', '_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false\n', '_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false\n', '_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false\n', '_securityagent:*:92:92:SecurityAgent:/var/empty:/usr/bin/false\n', '_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false\n', '_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false\n', '_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false\n', '_installer:*:96:-2:Installer:/var/empty:/usr/bin/false\n', '_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false\n', '_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false\n', '_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false\n', '_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false\n', '_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false\n', '_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false\n', '_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false\n', '_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false\n', '_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false\n', '_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false\n', '_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false\n', '_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false\n', '_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false\n', '_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false\n', '_postgres:*:216:216:PostgreSQL Server:/var/empt#!/usr/bin/env python
+y:/usr/bin/false\n', '_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false\n', '_webauthserver:*:221:221:Web Auth S#!/usr/bin/env python
+erver:/var/empty:/usr/bin/false\n', '_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false\n', '_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false\n', '_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false\n', '_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false\n', '_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false\n', '_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false\n', '_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false\n', '_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false\n', '_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false\n', '_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false\n', '_assetcache:*:235:235:Asset Cache Service#!/usr/bin/env python
+:/var/empty:/usr/bin/false\n', '_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false\n', '_xcsbuildagent:*:237:237:Xcode Server Build Agent:/var/empty:/usr/bin/false\n', '_xcscredserver:*:238:238:Xcode Server Credential Server:/var/empty:/usr/bin/false\n', '_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false\n']
+>>> kanna
+<closed file '/etc/passwd', mode 'r' at 0x10b36bf60>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> exit()
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ ls -ltr
+total 24
+drwx------  3 nagee  wheel   102 Jul  4 12:54 com.apple.launchd.nSWopq8sXk
+drwx------  3 nagee  wheel   102 Jul  4 12:54 com.apple.launchd.2c3svmivyp
+-rwxrwxrwx  1 nagee  wheel  5253 Jul  9 20:28 passwd
+-rw-r--r--  1 nagee  wheel    15 Jul  9 20:34 passwd1
+raj:tmp nagee$ vi func.py
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ vi func.py
+raj:tmp nagee$ python fun
+python: can't open file 'fun': [Errno 2] No such file or directory
+raj:tmp nagee$ python func.py
+10
+13
+11
+raj:tmp nagee$ vi func.py
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ python func.py
+10
+13
+11
+hi this is just print
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ vi func.py
+raj:tmp nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> kanna = open('/etc/passwd')
+>>> kanna = open('/etc/passwd')
+KeyboardInterrupt
+>>> open('/etc/passwd', 'w')
+KeyboardInterrupt
+>>> exit()
+raj:tmp nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> def kanna( one, two ):
+...  return one ** two
+...
+>>> raj = kanna(5, 5)
+>>> raj
+3125
+>>> dir(raj)
+['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', '__div__', '__divmod__', '__doc__', '__float__', '__floordiv__', '__format__', '__getattribute__', '__getnewargs__', '__hash__', '__hex__', '__index__', '__init__', '__int__', '__invert__', '__long__', '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', '__nonzero__', '__oct__', '__or__'
+
+, '__pos__', '__pow__', '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 'real']
+>>> dir(kanna)
+['__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__doc__', '__format__', '__get__', '__getattribute__', '__globals__', '__hash__', '__init__', '__module__', '__name__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'func_closure', 'func_code', 'func_defaults', 'func_dict', 'func_doc', 'func_globals', 'func_name']
+>>> type(kanna)
+<type 'function'>
+>>> def kanna_1():
+...   kanna_2()
+...
+>>> def kanna_2():
+...   kanna_3()
+...
+>>> def kanna_3():
+...  print("its a 3rd loop")
+...
+>>> kanna_3()
+its a 3rd loop
+>>> kanna_1()
+
+its a 3rd loop
+>>> def kanna_3():
+KeyboardInterrupt
+>>> exit()
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python nested_dic.py
+one
+two
+final looop
+raj:tmp nagee$ cat nes
+cat: nes: No such file or directory
+raj:tmp nagee$ cat nested_dic.py
+
+
+def one_a():
+  print("one")
+  one_b()
+
+def one_b():
+
+ print("two")
+ one_c()
+
+def one_c():
+ print("final looop")
+
+
+one_a()
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ cat nested_dic.py
+
+
+def one_a():
+  print("one")
+  one_b()
+
+def one_b():
+ print("two")
+
+ one_c()
+
+def one_c():
+ print("final looop")
+
+
+one_c()
+raj:tmp nagee$ python nested_dic.py
+final looop
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python nested_dic.py
+one
+
+two
+final looop
+two
+final looop
+final looop
+Traceback (most recent call last):
+  File "nested_dic.py", line 17, in <module>
+    for x in funct():
+TypeError: 'list' object is not callable
+raj:tmp nagee$ vi func.py
+raj:tmp nagee$ ls -ltr
+total 40
+
+drwx------  3 nagee  wheel   102 Jul  4 12:54 com.apple.launchd.nSWopq8sXk
+drwx------  3 nagee  wheel   102 Jul  4 12:54 com.apple.launchd.2c3svmivyp
+-rwxrwxrwx  1 nagee  wheel  5253 Jul  9 20:28 passwd
+-rw-r--r--  1 nagee  wheel    15 Jul  9 20:34 passwd1
+-rw-r--r--  1 nagee  wheel   165 Jul  9 20:45 func.py
+-rw-r--r--  1 nagee  wheel   182 Jul  9 20:54 nested_dic.py
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python nested_dic.py
+one
+two
+final looop
+two
+final looop
+final looop
+Traceback (most recent call last):
+  File "nested_dic.py", line 17, in <module>
+    for x in funct():
+TypeError: 'list' object is not callable
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python nested_dic.py
+one
+two
+final looop
+two
+final looop
+final looop
+Traceback (most recent call last):
+  File "nested_dic.py", line 17, in <module>
+    for x in funct():
+TypeError: 'list' object is not callable
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python nested_dic.py
+one
+two
+final looop
+two
+final looop
+final looop
+raj:tmp nagee$ cat nested_dic.py
+
+
+def one_a():
+  print("one")
+  one_b()
+
+def one_b():
+ print("two")
+ one_c()
+
+def one_c():
+ print("final looop")
+
+funct = [ one_a(), one_b(), one_c() ]
+
+
+for x in funct:
+ x
+raj:tmp nagee$
+raj:tmp nagee$
+raj:tmp nagee$ vi nested_dic.py
+raj:tmp nagee$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> def pass_by_ref( naga ):
+...  print(naga)
+...
+>>> pass_by_ref("kanna")
+kanna
+>>> pass_by_ref(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> pass_by_ref("naga" "raj")
+nagaraj
+>>> pass_by_ref("naga", "raj")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pass_by_ref() takes exactly 1 argument (2 given)
+>>> def pass_by_ref( *naga ):
+...  print(naga)
+...
+>>> pass_by_ref("naga", "raj")
+('naga', 'raj')
+>>> def pass_by_ref( *naga, naga ):
+  File "<stdin>", line 1
+    def pass_by_ref( *naga, naga ):
+                               ^
+SyntaxError: invalid syntax
+>>> def pass_by_ref( *naga, nagar ):
+  File "<stdin>", line 1
+    def pass_by_ref( *naga, nagar ):
+                                ^
+SyntaxError: invalid syntax
+>>> def pass_by_ref( nagar ):
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>> def pass_by_ref( *naga, nagar ):
+  File "<stdin>", line 1
+    def pass_by_ref( *naga, nagar ):
+                                ^
+SyntaxError: invalid syntax
+>>> def pass_by_ref( nagar, *naga ):
+...  print(nagar, naga)
+...
+>>> pass_by_ref(naga)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'naga' is not defined
+>>> pass_by_ref("naga")
+('naga', ())
+>>> pass_by_ref("naga", "asjdkgh", "adksgjha", "akjdgha")
+('naga', ('asjdkgh', 'adksgjha', 'akjdgha'))
+>>> exit()
