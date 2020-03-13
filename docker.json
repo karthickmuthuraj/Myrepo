@@ -1,0 +1,9 @@
+[
+	{
+		"Service": "systemctl status docker.service",
+		"Images": "docker images",
+		"Container": "docker ps",
+		"Networking": "swarm",
+		"Version": "version"
+	},
+]

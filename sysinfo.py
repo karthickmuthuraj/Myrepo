@@ -15,4 +15,5 @@ def main():
        sys.exit(1)
    sysinfo()
 
-main()
+if __name__ == "__main__": 
+ main()
